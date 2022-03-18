@@ -1,5 +1,5 @@
 
-# Keep Exploring Differential Privacy at ImageNet Scale
+# Exploring Differential Privacy with Large-scale Imbalanced Data
 ## Course 10-707 Advanced Deep Learning, 2022 Spring
 
 Code for the midway report by Naimu Deng, Wenjia Zhang.
