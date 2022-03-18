@@ -1,0 +1,374 @@
+without DP:
+Train Epoch: 1   took 11.869787216186523 seconds
+    Test acc = 20.200%.
+Train Epoch: 2   took 2.224273681640625 seconds
+    Test acc = 30.650%.
+Train Epoch: 3   took 2.1875288486480713 seconds
+    Test acc = 36.660%.
+Train Epoch: 4   took 2.2537307739257812 seconds
+    Test acc = 38.580%.
+Train Epoch: 5   took 2.198822021484375 seconds
+    Test acc = 43.250%.
+Train Epoch: 6   took 2.2165236473083496 seconds
+    Test acc = 46.010%.
+Train Epoch: 7   took 2.2048346996307373 seconds
+    Test acc = 47.410%.
+Train Epoch: 8   took 2.2823662757873535 seconds
+    Test acc = 49.420%.
+Train Epoch: 9   took 2.198887348175049 seconds
+    Test acc = 51.980%.
+Train Epoch: 10          took 2.2069079875946045 seconds
+    Test acc = 54.260%.
+Train Epoch: 11          took 2.1959831714630127 seconds
+    Test acc = 55.930%.
+Train Epoch: 12          took 2.284972667694092 seconds
+    Test acc = 56.550%.
+Train Epoch: 13          took 2.193939208984375 seconds
+    Test acc = 57.010%.
+Train Epoch: 14          took 2.2105157375335693 seconds
+    Test acc = 59.780%.
+Train Epoch: 15          took 2.1955559253692627 seconds
+    Test acc = 61.690%.
+Train Epoch: 16          took 2.29127836227417 seconds
+    Test acc = 60.460%.
+Train Epoch: 17          took 2.2163310050964355 seconds
+    Test acc = 63.210%.
+Train Epoch: 18          took 2.2196896076202393 seconds
+    Test acc = 64.390%.
+Train Epoch: 19          took 2.2073042392730713 seconds
+    Test acc = 64.800%.
+Train Epoch: 20          took 2.2681803703308105 seconds
+    Test acc = 65.620%.
+Train Epoch: 21          took 2.2109131813049316 seconds
+    Test acc = 60.560%.
+Train Epoch: 22          took 2.204530715942383 seconds
+    Test acc = 66.600%.
+Train Epoch: 23          took 2.2197816371917725 seconds
+    Test acc = 67.700%.
+Train Epoch: 24          took 2.2656781673431396 seconds
+    Test acc = 68.590%.
+Train Epoch: 25          took 2.1950061321258545 seconds
+    Test acc = 69.010%.
+Train Epoch: 26          took 2.211512804031372 seconds
+    Test acc = 68.580%.
+Train Epoch: 27          took 2.2095603942871094 seconds
+    Test acc = 69.910%.
+Train Epoch: 28          took 2.254572629928589 seconds
+    Test acc = 68.850%.
+Train Epoch: 29          took 2.1756110191345215 seconds
+    Test acc = 68.530%.
+Train Epoch: 30          took 2.1852035522460938 seconds
+    Test acc = 70.350%.
+Train Epoch: 31          took 2.1802144050598145 seconds
+    Test acc = 70.980%.
+Train Epoch: 32          took 2.254636287689209 seconds
+    Test acc = 71.520%.
+Train Epoch: 33          took 2.177100419998169 seconds
+    Test acc = 71.110%.
+Train Epoch: 34          took 2.1805734634399414 seconds
+    Test acc = 70.530%.
+Train Epoch: 35          took 2.1864817142486572 seconds
+    Test acc = 72.530%.
+Train Epoch: 36          took 2.2637598514556885 seconds
+    Test acc = 72.610%.
+Train Epoch: 37          took 2.171919345855713 seconds
+    Test acc = 72.800%.
+Train Epoch: 38          took 2.2010958194732666 seconds
+    Test acc = 73.220%.
+Train Epoch: 39          took 2.1858580112457275 seconds
+    Test acc = 69.630%.
+Train Epoch: 40          took 2.2460744380950928 seconds
+    Test acc = 73.000%.
+Train Epoch: 41          took 2.17244815826416 seconds
+    Test acc = 73.070%.
+Train Epoch: 42          took 2.1954362392425537 seconds
+    Test acc = 73.500%.
+Train Epoch: 43          took 2.1800708770751953 seconds
+    Test acc = 73.180%.
+Train Epoch: 44          took 2.2353365421295166 seconds
+    Test acc = 73.680%.
+Train Epoch: 45          took 2.1875686645507812 seconds
+    Test acc = 73.770%.
+Train Epoch: 46          took 2.210662364959717 seconds
+    Test acc = 73.110%.
+Train Epoch: 47          took 2.1858513355255127 seconds
+    Test acc = 73.730%.
+Train Epoch: 48          took 2.241992473602295 seconds
+    Test acc = 73.970%.
+Train Epoch: 49          took 2.1791200637817383 seconds
+    Test acc = 73.010%.
+Train Epoch: 50          took 2.180980682373047 seconds
+    Test acc = 74.290%.
+Train Epoch: 51          took 2.18628191947937 seconds
+    Test acc = 74.330%.
+Train Epoch: 52          took 2.2554497718811035 seconds
+    Test acc = 74.480%.
+Train Epoch: 53          took 2.15915846824646 seconds
+    Test acc = 73.590%.
+Train Epoch: 54          took 2.200794219970703 seconds
+    Test acc = 74.950%.
+Train Epoch: 55          took 2.183098316192627 seconds
+    Test acc = 74.610%.
+Train Epoch: 56          took 2.2707033157348633 seconds
+    Test acc = 74.220%.
+Train Epoch: 57          took 2.177502393722534 seconds
+    Test acc = 74.430%.
+Train Epoch: 58          took 2.176119565963745 seconds
+    Test acc = 74.320%.
+Train Epoch: 59          took 2.165027379989624 seconds
+    Test acc = 74.870%.
+Train Epoch: 60          took 2.244144916534424 seconds
+    Test acc = 75.070%.
+Train Epoch: 61          took 2.1936888694763184 seconds
+    Test acc = 75.110%.
+Train Epoch: 62          took 2.1963586807250977 seconds
+    Test acc = 74.850%.
+Train Epoch: 63          took 2.1801297664642334 seconds
+    Test acc = 75.090%.
+Train Epoch: 64          took 2.171769857406616 seconds
+    Test acc = 74.670%.
+Train Epoch: 65          took 2.175711154937744 seconds
+    Test acc = 75.180%.
+Train Epoch: 66          took 2.1700644493103027 seconds
+    Test acc = 75.520%.
+Train Epoch: 67          took 2.1958816051483154 seconds
+    Test acc = 75.130%.
+Train Epoch: 68          took 2.192228317260742 seconds
+    Test acc = 74.490%.
+Train Epoch: 69          took 2.176126480102539 seconds
+    Test acc = 75.380%.
+Train Epoch: 70          took 2.168220281600952 seconds
+    Test acc = 75.120%.
+Train Epoch: 71          took 2.1703898906707764 seconds
+    Test acc = 75.050%.
+Train Epoch: 72          took 2.181605100631714 seconds
+    Test acc = 74.720%.
+Train Epoch: 73          took 2.1874840259552 seconds
+    Test acc = 75.260%.
+Train Epoch: 74          took 2.1776158809661865 seconds
+    Test acc = 75.140%.
+Train Epoch: 75          took 2.1716983318328857 seconds
+    Test acc = 74.980%.
+Train Epoch: 76          took 2.208974838256836 seconds
+    Test acc = 75.330%.
+Train Epoch: 77          took 2.173229932785034 seconds
+    Test acc = 75.490%.
+Train Epoch: 78          took 2.183461904525757 seconds
+    Test acc = 75.490%.
+Train Epoch: 79          took 2.184968948364258 seconds
+    Test acc = 75.490%.
+Train Epoch: 80          took 2.179055690765381 seconds
+    Test acc = 75.530%.
+Train Epoch: 81          took 2.1870651245117188 seconds
+    Test acc = 75.540%.
+Train Epoch: 82          took 2.2096259593963623 seconds
+    Test acc = 75.600%.
+Train Epoch: 83          took 2.2001137733459473 seconds
+    Test acc = 75.540%.
+Train Epoch: 84          took 2.1717865467071533 seconds
+    Test acc = 75.650%.
+Train Epoch: 85          took 2.1933937072753906 seconds
+    Test acc = 75.480%.
+Train Epoch: 86          took 2.1873974800109863 seconds
+    Test acc = 75.590%.
+Train Epoch: 87          took 2.1740708351135254 seconds
+    Test acc = 75.640%.
+Train Epoch: 88          took 2.1789839267730713 seconds
+    Test acc = 75.630%.
+Train Epoch: 89          took 2.191392183303833 seconds
+    Test acc = 75.640%.
+Train Epoch: 90          took 2.1983773708343506 seconds
+    Test acc = 75.600%.
+Average epoch time (all epochs):  2.3091790596644084
+Median epoch time (all epochs):  2.1938140392303467
+Average epoch time (except first):  2.20175649610798
+Median epoch time (except first):  2.1936888694763184
+Total training time (excluding evaluation):  207.82611536979675
+
+
+with DP:
+Train Epoch: 1   took 23.898208618164062 seconds
+    Test acc = 24.290%.
+Train Epoch: 2   took 12.50549030303955 seconds
+    Test acc = 35.400%.
+Train Epoch: 3   took 12.457772731781006 seconds
+    Test acc = 38.600%.
+Train Epoch: 4   took 12.467319965362549 seconds
+    Test acc = 40.050%.
+Train Epoch: 5   took 12.40492033958435 seconds
+    Test acc = 43.300%.
+Train Epoch: 6   took 12.466612100601196 seconds
+    Test acc = 45.410%.
+Train Epoch: 7   took 12.492334604263306 seconds
+    Test acc = 46.800%.
+Train Epoch: 8   took 12.421834230422974 seconds
+    Test acc = 47.930%.
+Train Epoch: 9   took 13.046366214752197 seconds
+    Test acc = 46.860%.
+Train Epoch: 10          took 12.46211576461792 seconds
+    Test acc = 48.800%.
+Train Epoch: 11          took 12.38893461227417 seconds
+    Test acc = 48.740%.
+Train Epoch: 12          took 12.996466398239136 seconds
+    Test acc = 52.860%.
+Train Epoch: 13          took 12.567841291427612 seconds
+    Test acc = 53.490%.
+Train Epoch: 14          took 12.927485466003418 seconds
+    Test acc = 51.630%.
+Train Epoch: 15          took 12.622747659683228 seconds
+    Test acc = 53.760%.
+Train Epoch: 16          took 12.655402898788452 seconds
+    Test acc = 56.020%.
+Train Epoch: 17          took 12.998218536376953 seconds
+    Test acc = 56.240%.
+Train Epoch: 18          took 12.488739252090454 seconds
+    Test acc = 53.800%.
+Train Epoch: 19          took 12.44448709487915 seconds
+    Test acc = 55.550%.
+Train Epoch: 20          took 12.450756788253784 seconds
+    Test acc = 57.810%.
+Train Epoch: 21          took 12.55797815322876 seconds
+    Test acc = 58.490%.
+Train Epoch: 22          took 12.520267009735107 seconds
+    Test acc = 59.140%.
+Train Epoch: 23          took 12.46822452545166 seconds
+    Test acc = 59.740%.
+Train Epoch: 24          took 12.68798279762268 seconds
+    Test acc = 58.910%.
+Train Epoch: 25          took 12.702995300292969 seconds
+    Test acc = 59.530%.
+Train Epoch: 26          took 13.064448118209839 seconds
+    Test acc = 59.910%.
+Train Epoch: 27          took 12.754520177841187 seconds
+    Test acc = 60.210%.
+Train Epoch: 28          took 12.679888486862183 seconds
+    Test acc = 60.670%.
+Train Epoch: 29          took 12.985449075698853 seconds
+    Test acc = 61.870%.
+Train Epoch: 30          took 12.638630151748657 seconds
+    Test acc = 61.840%.
+Train Epoch: 31          took 12.827981948852539 seconds
+    Test acc = 60.890%.
+Train Epoch: 32          took 12.859964370727539 seconds
+    Test acc = 62.150%.
+Train Epoch: 33          took 12.96078372001648 seconds
+    Test acc = 62.570%.
+Train Epoch: 34          took 12.6397705078125 seconds
+    Test acc = 61.540%.
+Train Epoch: 35          took 12.734328031539917 seconds
+    Test acc = 62.730%.
+Train Epoch: 36          took 12.893043279647827 seconds
+    Test acc = 62.250%.
+Train Epoch: 37          took 12.620270490646362 seconds
+    Test acc = 61.550%.
+Train Epoch: 38          took 13.030483484268188 seconds
+    Test acc = 61.550%.
+Train Epoch: 39          took 12.696121215820312 seconds
+    Test acc = 63.250%.
+Train Epoch: 40          took 12.423994064331055 seconds
+    Test acc = 64.010%.
+Train Epoch: 41          took 12.386810541152954 seconds
+    Test acc = 63.720%.
+Train Epoch: 42          took 12.704047918319702 seconds
+    Test acc = 63.470%.
+Train Epoch: 43          took 12.38038158416748 seconds
+    Test acc = 63.880%.
+Train Epoch: 44          took 12.521706819534302 seconds
+    Test acc = 64.460%.
+Train Epoch: 45          took 12.470531463623047 seconds
+    Test acc = 64.240%.
+Train Epoch: 46          took 12.458527326583862 seconds
+    Test acc = 64.680%.
+Train Epoch: 47          took 12.790969848632812 seconds
+    Test acc = 64.560%.
+Train Epoch: 48          took 12.809910297393799 seconds
+    Test acc = 64.340%.
+Train Epoch: 49          took 12.614236831665039 seconds
+    Test acc = 64.940%.
+Train Epoch: 50          took 12.736518144607544 seconds
+    Test acc = 64.890%.
+Train Epoch: 51          took 12.670756816864014 seconds
+    Test acc = 65.400%.
+Train Epoch: 52          took 12.680526494979858 seconds
+    Test acc = 64.830%.
+Train Epoch: 53          took 13.178621292114258 seconds
+    Test acc = 65.220%.
+Train Epoch: 54          took 12.755688905715942 seconds
+    Test acc = 65.750%.
+Train Epoch: 55          took 13.163847208023071 seconds
+    Test acc = 65.760%.
+Train Epoch: 56          took 12.473063707351685 seconds
+    Test acc = 66.160%.
+Train Epoch: 57          took 12.432538032531738 seconds
+    Test acc = 66.100%.
+Train Epoch: 58          took 12.910060167312622 seconds
+    Test acc = 66.090%.
+Train Epoch: 59          took 12.584237337112427 seconds
+    Test acc = 66.180%.
+Train Epoch: 60          took 12.650667905807495 seconds
+    Test acc = 65.950%.
+Train Epoch: 61          took 12.480406045913696 seconds
+    Test acc = 66.080%.
+Train Epoch: 62          took 12.552752256393433 seconds
+    Test acc = 66.340%.
+Train Epoch: 63          took 12.779075860977173 seconds
+    Test acc = 65.960%.
+Train Epoch: 64          took 12.89972448348999 seconds
+    Test acc = 66.500%.
+Train Epoch: 65          took 12.651119470596313 seconds
+    Test acc = 66.710%.
+Train Epoch: 66          took 13.042243242263794 seconds
+    Test acc = 66.750%.
+Train Epoch: 67          took 12.468463659286499 seconds
+    Test acc = 66.850%.
+Train Epoch: 68          took 13.136316537857056 seconds
+    Test acc = 66.860%.
+Train Epoch: 69          took 12.835882186889648 seconds
+    Test acc = 66.960%.
+Train Epoch: 70          took 12.791229724884033 seconds
+    Test acc = 67.020%.
+Train Epoch: 71          took 13.115846872329712 seconds
+    Test acc = 66.940%.
+Train Epoch: 72          took 12.638044834136963 seconds
+    Test acc = 66.900%.
+Train Epoch: 73          took 12.433211088180542 seconds
+    Test acc = 67.100%.
+Train Epoch: 74          took 12.473799705505371 seconds
+    Test acc = 67.000%.
+Train Epoch: 75          took 12.432775020599365 seconds
+    Test acc = 67.320%.
+Train Epoch: 76          took 13.1398606300354 seconds
+    Test acc = 66.980%.
+Train Epoch: 77          took 12.667820453643799 seconds
+    Test acc = 67.100%.
+Train Epoch: 78          took 12.878626823425293 seconds
+    Test acc = 67.180%.
+Train Epoch: 79          took 12.69527006149292 seconds
+    Test acc = 67.320%.
+Train Epoch: 80          took 13.127339124679565 seconds
+    Test acc = 67.180%.
+Train Epoch: 81          took 13.13595175743103 seconds
+    Test acc = 67.470%.
+Train Epoch: 82          took 12.486201047897339 seconds
+    Test acc = 67.130%.
+Train Epoch: 83          took 13.016922235488892 seconds
+    Test acc = 67.480%.
+Train Epoch: 84          took 12.607643127441406 seconds
+    Test acc = 67.370%.
+Train Epoch: 85          took 12.819744110107422 seconds
+    Test acc = 67.340%.
+Train Epoch: 86          took 12.621208190917969 seconds
+    Test acc = 67.350%.
+Train Epoch: 87          took 12.5038321018219 seconds
+    Test acc = 67.460%.
+Train Epoch: 88          took 12.756601810455322 seconds
+    Test acc = 67.460%.
+Train Epoch: 89          took 12.823539018630981 seconds
+    Test acc = 67.440%.
+Train Epoch: 90          took 12.92297101020813 seconds
+    Test acc = 67.430%.
+Average epoch time (all epochs):  12.824658343527052
+Median epoch time (all epochs):  12.669288635253906
+Average epoch time (except first):  12.700236430328884
+Median epoch time (except first):  12.667820453643799
+Total training time (excluding evaluation):  1154.2192509174347

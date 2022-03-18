@@ -1,0 +1,474 @@
+without DP:
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ../cifar10/cifar-10-python.tar.gz
+170499072it [00:02, 73381084.58it/s]                                                                                                                                    
+Extracting ../cifar10/cifar-10-python.tar.gz to ../cifar10
+Files already downloaded and verified
+Train Epoch: 1   took 8.058950901031494 seconds
+        Test set:Loss: 2.210376 Acc@1: 0.177246 
+Train Epoch: 2   took 8.15050482749939 seconds
+        Test set:Loss: 1.996109 Acc@1: 0.248145 
+Train Epoch: 3   took 8.231037378311157 seconds
+        Test set:Loss: 1.884435 Acc@1: 0.308691 
+Train Epoch: 4   took 8.11073088645935 seconds
+        Test set:Loss: 1.777229 Acc@1: 0.343652 
+Train Epoch: 5   took 8.177696228027344 seconds
+        Test set:Loss: 1.804303 Acc@1: 0.322461 
+Train Epoch: 6   took 8.171999216079712 seconds
+        Test set:Loss: 1.651561 Acc@1: 0.385742 
+Train Epoch: 7   took 8.199718713760376 seconds
+        Test set:Loss: 1.613194 Acc@1: 0.407324 
+Train Epoch: 8   took 8.241591691970825 seconds
+        Test set:Loss: 1.563876 Acc@1: 0.424707 
+Train Epoch: 9   took 8.121294260025024 seconds
+        Test set:Loss: 1.610271 Acc@1: 0.422070 
+Train Epoch: 10          took 8.10920786857605 seconds
+        Test set:Loss: 1.474406 Acc@1: 0.458984 
+Train Epoch: 11          took 8.179839849472046 seconds
+        Test set:Loss: 1.454304 Acc@1: 0.460742 
+Train Epoch: 12          took 8.151098251342773 seconds
+        Test set:Loss: 1.409271 Acc@1: 0.476855 
+Train Epoch: 13          took 8.236303329467773 seconds
+        Test set:Loss: 1.329104 Acc@1: 0.511621 
+Train Epoch: 14          took 8.24234938621521 seconds
+        Test set:Loss: 1.359941 Acc@1: 0.506055 
+Train Epoch: 15          took 8.220289945602417 seconds
+        Test set:Loss: 1.334045 Acc@1: 0.505273 
+Train Epoch: 16          took 8.135300397872925 seconds
+        Test set:Loss: 1.276908 Acc@1: 0.528027 
+Train Epoch: 17          took 8.255343437194824 seconds
+        Test set:Loss: 1.253714 Acc@1: 0.553613 
+Train Epoch: 18          took 8.176519870758057 seconds
+        Test set:Loss: 1.235340 Acc@1: 0.545801 
+Train Epoch: 19          took 8.265262126922607 seconds
+        Test set:Loss: 1.167944 Acc@1: 0.581250 
+Train Epoch: 20          took 8.355323553085327 seconds
+        Test set:Loss: 1.155320 Acc@1: 0.585059 
+Train Epoch: 21          took 8.151666641235352 seconds
+        Test set:Loss: 1.284925 Acc@1: 0.545898 
+Train Epoch: 22          took 8.139633655548096 seconds
+        Test set:Loss: 1.173555 Acc@1: 0.576660 
+Train Epoch: 23          took 8.193264484405518 seconds
+        Test set:Loss: 1.076437 Acc@1: 0.610547 
+Train Epoch: 24          took 8.212594032287598 seconds
+        Test set:Loss: 1.053706 Acc@1: 0.615723 
+Train Epoch: 25          took 8.216257572174072 seconds
+        Test set:Loss: 1.048415 Acc@1: 0.629980 
+Train Epoch: 26          took 8.241987705230713 seconds
+        Test set:Loss: 1.010998 Acc@1: 0.641602 
+Train Epoch: 27          took 8.195768594741821 seconds
+        Test set:Loss: 0.983375 Acc@1: 0.652832 
+Train Epoch: 28          took 8.142743110656738 seconds
+        Test set:Loss: 1.039616 Acc@1: 0.633691 
+Train Epoch: 29          took 8.248825311660767 seconds
+        Test set:Loss: 0.950286 Acc@1: 0.661035 
+Train Epoch: 30          took 8.157261848449707 seconds
+        Test set:Loss: 0.968731 Acc@1: 0.654102 
+Train Epoch: 31          took 8.122955560684204 seconds
+        Test set:Loss: 0.916668 Acc@1: 0.672559 
+Train Epoch: 32          took 8.201879262924194 seconds
+        Test set:Loss: 0.912903 Acc@1: 0.669336 
+Train Epoch: 33          took 8.171786785125732 seconds
+        Test set:Loss: 0.904662 Acc@1: 0.678906 
+Train Epoch: 34          took 8.209289312362671 seconds
+        Test set:Loss: 0.913875 Acc@1: 0.675391 
+Train Epoch: 35          took 8.177714347839355 seconds
+        Test set:Loss: 0.896676 Acc@1: 0.684180 
+Train Epoch: 36          took 8.223881721496582 seconds
+        Test set:Loss: 0.875342 Acc@1: 0.687793 
+Train Epoch: 37          took 8.198328495025635 seconds
+        Test set:Loss: 0.883966 Acc@1: 0.689453 
+Train Epoch: 38          took 8.106208562850952 seconds
+        Test set:Loss: 0.858932 Acc@1: 0.695117 
+Train Epoch: 39          took 8.227695226669312 seconds
+        Test set:Loss: 0.849819 Acc@1: 0.700879 
+Train Epoch: 40          took 8.137886762619019 seconds
+        Test set:Loss: 0.874996 Acc@1: 0.694336 
+Train Epoch: 41          took 8.219630718231201 seconds
+        Test set:Loss: 0.838306 Acc@1: 0.704004 
+Train Epoch: 42          took 8.138976097106934 seconds
+        Test set:Loss: 0.867553 Acc@1: 0.694922 
+Train Epoch: 43          took 8.224993705749512 seconds
+        Test set:Loss: 0.806460 Acc@1: 0.718359 
+Train Epoch: 44          took 8.203776359558105 seconds
+        Test set:Loss: 0.828844 Acc@1: 0.706836 
+Train Epoch: 45          took 8.17575192451477 seconds
+        Test set:Loss: 0.799093 Acc@1: 0.720996 
+Train Epoch: 46          took 8.27213978767395 seconds
+        Test set:Loss: 0.797956 Acc@1: 0.727637 
+Train Epoch: 47          took 8.244638919830322 seconds
+        Test set:Loss: 0.812495 Acc@1: 0.708594 
+Train Epoch: 48          took 8.147991418838501 seconds
+        Test set:Loss: 0.783501 Acc@1: 0.729980 
+Train Epoch: 49          took 8.26444387435913 seconds
+        Test set:Loss: 0.807165 Acc@1: 0.719238 
+Train Epoch: 50          took 8.107959747314453 seconds
+        Test set:Loss: 0.772567 Acc@1: 0.728027 
+Train Epoch: 51          took 8.307811737060547 seconds
+        Test set:Loss: 0.774198 Acc@1: 0.727148 
+Train Epoch: 52          took 8.192452430725098 seconds
+        Test set:Loss: 0.767947 Acc@1: 0.736230 
+Train Epoch: 53          took 8.246521949768066 seconds
+        Test set:Loss: 0.751147 Acc@1: 0.737500 
+Train Epoch: 54          took 8.22904634475708 seconds
+        Test set:Loss: 0.769492 Acc@1: 0.733496 
+Train Epoch: 55          took 8.148364067077637 seconds
+        Test set:Loss: 0.765251 Acc@1: 0.737500 
+Train Epoch: 56          took 8.088508367538452 seconds
+        Test set:Loss: 0.755502 Acc@1: 0.740039 
+Train Epoch: 57          took 8.200865268707275 seconds
+        Test set:Loss: 0.747332 Acc@1: 0.742090 
+Train Epoch: 58          took 8.080207824707031 seconds
+        Test set:Loss: 0.737497 Acc@1: 0.743555 
+Train Epoch: 59          took 8.210586071014404 seconds
+        Test set:Loss: 0.745950 Acc@1: 0.745605 
+Train Epoch: 60          took 8.269346952438354 seconds
+        Test set:Loss: 0.737354 Acc@1: 0.749512 
+Train Epoch: 61          took 8.2174551486969 seconds
+        Test set:Loss: 0.748648 Acc@1: 0.736816 
+Train Epoch: 62          took 8.175416231155396 seconds
+        Test set:Loss: 0.740968 Acc@1: 0.743359 
+Train Epoch: 63          took 8.166743755340576 seconds
+        Test set:Loss: 0.731677 Acc@1: 0.746777 
+Train Epoch: 64          took 8.288962125778198 seconds
+        Test set:Loss: 0.728532 Acc@1: 0.751855 
+Train Epoch: 65          took 8.318336725234985 seconds
+        Test set:Loss: 0.721517 Acc@1: 0.750488 
+Train Epoch: 66          took 8.102717638015747 seconds
+        Test set:Loss: 0.721482 Acc@1: 0.751758 
+Train Epoch: 67          took 8.22044587135315 seconds
+        Test set:Loss: 0.723391 Acc@1: 0.752539 
+Train Epoch: 68          took 8.058442831039429 seconds
+        Test set:Loss: 0.712500 Acc@1: 0.751855 
+Train Epoch: 69          took 8.189127683639526 seconds
+        Test set:Loss: 0.710917 Acc@1: 0.751074 
+Train Epoch: 70          took 8.231495380401611 seconds
+        Test set:Loss: 0.718651 Acc@1: 0.751074 
+Train Epoch: 71          took 8.253137350082397 seconds
+        Test set:Loss: 0.715256 Acc@1: 0.754297 
+Train Epoch: 72          took 8.258948802947998 seconds
+        Test set:Loss: 0.709145 Acc@1: 0.757812 
+Train Epoch: 73          took 8.220498323440552 seconds
+        Test set:Loss: 0.710738 Acc@1: 0.754687 
+Train Epoch: 74          took 8.275544881820679 seconds
+        Test set:Loss: 0.706853 Acc@1: 0.758203 
+Train Epoch: 75          took 8.177451133728027 seconds
+        Test set:Loss: 0.707164 Acc@1: 0.757324 
+Train Epoch: 76          took 8.160590171813965 seconds
+        Test set:Loss: 0.704028 Acc@1: 0.757422 
+Train Epoch: 77          took 8.22623062133789 seconds
+        Test set:Loss: 0.703364 Acc@1: 0.757812 
+Train Epoch: 78          took 8.101603269577026 seconds
+        Test set:Loss: 0.701398 Acc@1: 0.757910 
+Train Epoch: 79          took 8.148833990097046 seconds
+        Test set:Loss: 0.699842 Acc@1: 0.761426 
+Train Epoch: 80          took 8.357396841049194 seconds
+        Test set:Loss: 0.695963 Acc@1: 0.760840 
+Train Epoch: 81          took 8.280046224594116 seconds
+        Test set:Loss: 0.697489 Acc@1: 0.761328 
+Train Epoch: 82          took 8.20303726196289 seconds
+        Test set:Loss: 0.695068 Acc@1: 0.761328 
+Train Epoch: 83          took 8.217340230941772 seconds
+        Test set:Loss: 0.694147 Acc@1: 0.759961 
+Train Epoch: 84          took 8.114309787750244 seconds
+        Test set:Loss: 0.693393 Acc@1: 0.762598 
+Train Epoch: 85          took 8.197517395019531 seconds
+        Test set:Loss: 0.694040 Acc@1: 0.761719 
+Train Epoch: 86          took 8.202310800552368 seconds
+        Test set:Loss: 0.693021 Acc@1: 0.761816 
+Train Epoch: 87          took 8.235512971878052 seconds
+        Test set:Loss: 0.692924 Acc@1: 0.762402 
+Train Epoch: 88          took 8.251631021499634 seconds
+        Test set:Loss: 0.692995 Acc@1: 0.761328 
+Train Epoch: 89          took 8.252087593078613 seconds
+        Test set:Loss: 0.692436 Acc@1: 0.762207 
+Train Epoch: 90          took 8.179645299911499 seconds
+        Test set:Loss: 0.692490 Acc@1: 0.762305 
+Average epoch time (all epochs):  8.196942467159696
+Median epoch time (all epochs):  8.201372265815735
+Average epoch time (except first):  8.198492934194844
+Median epoch time (except first):  8.201879262924194
+Total training time (excluding evaluation):  737.7248220443726
+
+
+with DP:
+Files already downloaded and verified
+Files already downloaded and verified
+/home/ubuntu/.venv/dp_imagenet/lib/python3.8/site-packages/opacus/privacy_engine.py:114: UserWarning: Secure RNG turned off. This is perfectly fine for experimentation as it allows for much faster training performance, but remember to turn it on and retrain one last time before production with ``secure_mode`` turned on.
+  warnings.warn(
+/home/ubuntu/.venv/dp_imagenet/lib/python3.8/site-packages/torch/nn/modules/module.py:1033: UserWarning: Using a non-full backward hook when the forward contains multiple autograd Nodes is deprecated and will be removed in future versions. This hook will be missing some grad_input. Please use register_full_backward_hook to get the documented behavior.
+  warnings.warn("Using a non-full backward hook when the forward contains multiple autograd Nodes "
+Train Epoch: 1   took 5.246591567993164 seconds
+        Test set:Loss: 2.301881 Acc@1: 0.135059 
+        Privacy: (ε = 0.90, δ = 1e-05)
+Train Epoch: 2   took 5.270726442337036 seconds
+        Test set:Loss: 2.299443 Acc@1: 0.185645 
+        Privacy: (ε = 1.12, δ = 1e-05)
+Train Epoch: 3   took 5.180625677108765 seconds
+        Test set:Loss: 2.294251 Acc@1: 0.200586 
+        Privacy: (ε = 1.32, δ = 1e-05)
+Train Epoch: 4   took 5.1972761154174805 seconds
+        Test set:Loss: 2.278993 Acc@1: 0.197949 
+        Privacy: (ε = 1.48, δ = 1e-05)
+Train Epoch: 5   took 5.221957683563232 seconds
+        Test set:Loss: 2.203383 Acc@1: 0.191699 
+        Privacy: (ε = 1.64, δ = 1e-05)
+Train Epoch: 6   took 5.1788341999053955 seconds
+        Test set:Loss: 2.091199 Acc@1: 0.217090 
+        Privacy: (ε = 1.78, δ = 1e-05)
+Train Epoch: 7   took 5.2406325340271 seconds
+        Test set:Loss: 2.092809 Acc@1: 0.230859 
+        Privacy: (ε = 1.92, δ = 1e-05)
+Train Epoch: 8   took 5.20980429649353 seconds
+        Test set:Loss: 2.054471 Acc@1: 0.257422 
+        Privacy: (ε = 2.04, δ = 1e-05)
+Train Epoch: 9   took 5.299245119094849 seconds
+        Test set:Loss: 2.066041 Acc@1: 0.254004 
+        Privacy: (ε = 2.16, δ = 1e-05)
+Train Epoch: 10          took 5.205865859985352 seconds
+        Test set:Loss: 2.019190 Acc@1: 0.275586 
+        Privacy: (ε = 2.28, δ = 1e-05)
+Train Epoch: 11          took 5.2169458866119385 seconds
+        Test set:Loss: 1.955706 Acc@1: 0.280566 
+        Privacy: (ε = 2.39, δ = 1e-05)
+Train Epoch: 12          took 5.272835969924927 seconds
+        Test set:Loss: 1.974060 Acc@1: 0.284473 
+        Privacy: (ε = 2.49, δ = 1e-05)
+Train Epoch: 13          took 5.188682794570923 seconds
+        Test set:Loss: 2.010177 Acc@1: 0.283789 
+        Privacy: (ε = 2.60, δ = 1e-05)
+Train Epoch: 14          took 5.286510944366455 seconds
+        Test set:Loss: 1.901722 Acc@1: 0.315723 
+        Privacy: (ε = 2.69, δ = 1e-05)
+Train Epoch: 15          took 5.264431715011597 seconds
+        Test set:Loss: 1.882336 Acc@1: 0.319922 
+        Privacy: (ε = 2.79, δ = 1e-05)
+Train Epoch: 16          took 5.253343105316162 seconds
+        Test set:Loss: 1.915349 Acc@1: 0.306738 
+        Privacy: (ε = 2.88, δ = 1e-05)
+Train Epoch: 17          took 5.295795440673828 seconds
+        Test set:Loss: 1.903690 Acc@1: 0.313477 
+        Privacy: (ε = 2.97, δ = 1e-05)
+Train Epoch: 18          took 5.352908611297607 seconds
+        Test set:Loss: 1.869790 Acc@1: 0.329785 
+        Privacy: (ε = 3.06, δ = 1e-05)
+Train Epoch: 19          took 5.242437124252319 seconds
+        Test set:Loss: 1.872445 Acc@1: 0.334863 
+        Privacy: (ε = 3.15, δ = 1e-05)
+Train Epoch: 20          took 5.205513000488281 seconds
+        Test set:Loss: 1.847943 Acc@1: 0.339746 
+        Privacy: (ε = 3.23, δ = 1e-05)
+Train Epoch: 21          took 5.162262916564941 seconds
+        Test set:Loss: 1.891066 Acc@1: 0.329883 
+        Privacy: (ε = 3.32, δ = 1e-05)
+Train Epoch: 22          took 5.185344934463501 seconds
+        Test set:Loss: 1.830960 Acc@1: 0.343945 
+        Privacy: (ε = 3.40, δ = 1e-05)
+Train Epoch: 23          took 5.225513696670532 seconds
+        Test set:Loss: 1.833748 Acc@1: 0.347852 
+        Privacy: (ε = 3.48, δ = 1e-05)
+Train Epoch: 24          took 5.19798731803894 seconds
+        Test set:Loss: 1.813930 Acc@1: 0.354590 
+        Privacy: (ε = 3.56, δ = 1e-05)
+Train Epoch: 25          took 5.185553073883057 seconds
+        Test set:Loss: 1.813226 Acc@1: 0.353613 
+        Privacy: (ε = 3.63, δ = 1e-05)
+Train Epoch: 26          took 5.249671697616577 seconds
+        Test set:Loss: 1.805245 Acc@1: 0.359766 
+        Privacy: (ε = 3.71, δ = 1e-05)
+Train Epoch: 27          took 5.322442054748535 seconds
+        Test set:Loss: 1.791123 Acc@1: 0.364746 
+        Privacy: (ε = 3.78, δ = 1e-05)
+Train Epoch: 28          took 5.204726696014404 seconds
+        Test set:Loss: 1.786015 Acc@1: 0.367188 
+        Privacy: (ε = 3.86, δ = 1e-05)
+Train Epoch: 29          took 5.1875457763671875 seconds
+        Test set:Loss: 1.782059 Acc@1: 0.366797 
+        Privacy: (ε = 3.93, δ = 1e-05)
+Train Epoch: 30          took 5.277179002761841 seconds
+        Test set:Loss: 1.766506 Acc@1: 0.376660 
+        Privacy: (ε = 4.00, δ = 1e-05)
+Train Epoch: 31          took 5.20776891708374 seconds
+        Test set:Loss: 1.758075 Acc@1: 0.378027 
+        Privacy: (ε = 4.07, δ = 1e-05)
+Train Epoch: 32          took 5.259839296340942 seconds
+        Test set:Loss: 1.763532 Acc@1: 0.376660 
+        Privacy: (ε = 4.14, δ = 1e-05)
+Train Epoch: 33          took 5.238040208816528 seconds
+        Test set:Loss: 1.758420 Acc@1: 0.373633 
+        Privacy: (ε = 4.21, δ = 1e-05)
+Train Epoch: 34          took 5.235193490982056 seconds
+        Test set:Loss: 1.740360 Acc@1: 0.377246 
+        Privacy: (ε = 4.28, δ = 1e-05)
+Train Epoch: 35          took 5.248278379440308 seconds
+        Test set:Loss: 1.743306 Acc@1: 0.377637 
+        Privacy: (ε = 4.35, δ = 1e-05)
+Train Epoch: 36          took 5.281265020370483 seconds
+        Test set:Loss: 1.759252 Acc@1: 0.372656 
+        Privacy: (ε = 4.41, δ = 1e-05)
+Train Epoch: 37          took 5.190300226211548 seconds
+        Test set:Loss: 1.739451 Acc@1: 0.385449 
+        Privacy: (ε = 4.48, δ = 1e-05)
+Train Epoch: 38          took 5.2628514766693115 seconds
+        Test set:Loss: 1.740902 Acc@1: 0.381738 
+        Privacy: (ε = 4.54, δ = 1e-05)
+Train Epoch: 39          took 5.232821702957153 seconds
+        Test set:Loss: 1.737006 Acc@1: 0.386719 
+        Privacy: (ε = 4.61, δ = 1e-05)
+Train Epoch: 40          took 5.234095335006714 seconds
+        Test set:Loss: 1.729757 Acc@1: 0.385645 
+        Privacy: (ε = 4.67, δ = 1e-05)
+Train Epoch: 41          took 5.315882682800293 seconds
+        Test set:Loss: 1.716582 Acc@1: 0.389941 
+        Privacy: (ε = 4.73, δ = 1e-05)
+Train Epoch: 42          took 5.230035305023193 seconds
+        Test set:Loss: 1.736417 Acc@1: 0.388477 
+        Privacy: (ε = 4.80, δ = 1e-05)
+Train Epoch: 43          took 5.225414514541626 seconds
+        Test set:Loss: 1.713296 Acc@1: 0.393066 
+        Privacy: (ε = 4.86, δ = 1e-05)
+Train Epoch: 44          took 5.269856214523315 seconds
+        Test set:Loss: 1.711563 Acc@1: 0.390430 
+        Privacy: (ε = 4.92, δ = 1e-05)
+Train Epoch: 45          took 5.221510410308838 seconds
+        Test set:Loss: 1.707230 Acc@1: 0.389062 
+        Privacy: (ε = 4.98, δ = 1e-05)
+Train Epoch: 46          took 5.33435320854187 seconds
+        Test set:Loss: 1.703215 Acc@1: 0.393262 
+        Privacy: (ε = 5.04, δ = 1e-05)
+Train Epoch: 47          took 5.205121040344238 seconds
+        Test set:Loss: 1.699195 Acc@1: 0.392871 
+        Privacy: (ε = 5.10, δ = 1e-05)
+Train Epoch: 48          took 5.292795181274414 seconds
+        Test set:Loss: 1.698312 Acc@1: 0.395117 
+        Privacy: (ε = 5.16, δ = 1e-05)
+Train Epoch: 49          took 5.167921304702759 seconds
+        Test set:Loss: 1.695531 Acc@1: 0.393652 
+        Privacy: (ε = 5.22, δ = 1e-05)
+Train Epoch: 50          took 5.280717611312866 seconds
+        Test set:Loss: 1.697803 Acc@1: 0.395898 
+        Privacy: (ε = 5.28, δ = 1e-05)
+Train Epoch: 51          took 5.221460819244385 seconds
+        Test set:Loss: 1.697390 Acc@1: 0.398828 
+        Privacy: (ε = 5.33, δ = 1e-05)
+Train Epoch: 52          took 5.244365453720093 seconds
+        Test set:Loss: 1.696804 Acc@1: 0.397461 
+        Privacy: (ε = 5.39, δ = 1e-05)
+Train Epoch: 53          took 5.16921591758728 seconds
+        Test set:Loss: 1.689388 Acc@1: 0.400293 
+        Privacy: (ε = 5.45, δ = 1e-05)
+Train Epoch: 54          took 5.342474937438965 seconds
+        Test set:Loss: 1.689774 Acc@1: 0.401660 
+        Privacy: (ε = 5.50, δ = 1e-05)
+Train Epoch: 55          took 5.191313982009888 seconds
+        Test set:Loss: 1.689423 Acc@1: 0.404785 
+        Privacy: (ε = 5.56, δ = 1e-05)
+Train Epoch: 56          took 5.277027130126953 seconds
+        Test set:Loss: 1.690378 Acc@1: 0.401074 
+        Privacy: (ε = 5.62, δ = 1e-05)
+Train Epoch: 57          took 5.166963338851929 seconds
+        Test set:Loss: 1.691491 Acc@1: 0.401758 
+        Privacy: (ε = 5.67, δ = 1e-05)
+Train Epoch: 58          took 5.178968191146851 seconds
+        Test set:Loss: 1.682155 Acc@1: 0.404785 
+        Privacy: (ε = 5.73, δ = 1e-05)
+Train Epoch: 59          took 5.20454478263855 seconds
+        Test set:Loss: 1.680584 Acc@1: 0.404980 
+        Privacy: (ε = 5.78, δ = 1e-05)
+Train Epoch: 60          took 5.316834926605225 seconds
+        Test set:Loss: 1.690144 Acc@1: 0.408789 
+        Privacy: (ε = 5.83, δ = 1e-05)
+Train Epoch: 61          took 5.248023271560669 seconds
+        Test set:Loss: 1.682018 Acc@1: 0.405078 
+        Privacy: (ε = 5.89, δ = 1e-05)
+Train Epoch: 62          took 5.213162660598755 seconds
+        Test set:Loss: 1.682627 Acc@1: 0.404590 
+        Privacy: (ε = 5.94, δ = 1e-05)
+Train Epoch: 63          took 5.2860822677612305 seconds
+        Test set:Loss: 1.680560 Acc@1: 0.404102 
+        Privacy: (ε = 6.00, δ = 1e-05)
+Train Epoch: 64          took 5.250172138214111 seconds
+        Test set:Loss: 1.679702 Acc@1: 0.410547 
+        Privacy: (ε = 6.05, δ = 1e-05)
+Train Epoch: 65          took 5.2435219287872314 seconds
+        Test set:Loss: 1.679137 Acc@1: 0.407129 
+        Privacy: (ε = 6.10, δ = 1e-05)
+Train Epoch: 66          took 5.231250286102295 seconds
+        Test set:Loss: 1.678709 Acc@1: 0.410156 
+        Privacy: (ε = 6.15, δ = 1e-05)
+Train Epoch: 67          took 5.262625455856323 seconds
+        Test set:Loss: 1.679335 Acc@1: 0.405957 
+        Privacy: (ε = 6.20, δ = 1e-05)
+Train Epoch: 68          took 5.218524217605591 seconds
+        Test set:Loss: 1.676184 Acc@1: 0.407031 
+        Privacy: (ε = 6.26, δ = 1e-05)
+Train Epoch: 69          took 5.255294561386108 seconds
+        Test set:Loss: 1.675017 Acc@1: 0.409473 
+        Privacy: (ε = 6.31, δ = 1e-05)
+Train Epoch: 70          took 5.213382959365845 seconds
+        Test set:Loss: 1.672069 Acc@1: 0.408301 
+        Privacy: (ε = 6.36, δ = 1e-05)
+Train Epoch: 71          took 5.187729358673096 seconds
+        Test set:Loss: 1.674197 Acc@1: 0.407617 
+        Privacy: (ε = 6.41, δ = 1e-05)
+Train Epoch: 72          took 5.185660362243652 seconds
+        Test set:Loss: 1.676084 Acc@1: 0.407422 
+        Privacy: (ε = 6.46, δ = 1e-05)
+Train Epoch: 73          took 5.244204521179199 seconds
+        Test set:Loss: 1.672070 Acc@1: 0.408789 
+        Privacy: (ε = 6.51, δ = 1e-05)
+Train Epoch: 74          took 5.182687520980835 seconds
+        Test set:Loss: 1.672894 Acc@1: 0.411426 
+        Privacy: (ε = 6.56, δ = 1e-05)
+Train Epoch: 75          took 5.199068307876587 seconds
+        Test set:Loss: 1.670656 Acc@1: 0.409863 
+        Privacy: (ε = 6.61, δ = 1e-05)
+Train Epoch: 76          took 5.279882907867432 seconds
+        Test set:Loss: 1.673071 Acc@1: 0.409180 
+        Privacy: (ε = 6.66, δ = 1e-05)
+Train Epoch: 77          took 5.210529327392578 seconds
+        Test set:Loss: 1.672868 Acc@1: 0.408789 
+        Privacy: (ε = 6.71, δ = 1e-05)
+Train Epoch: 78          took 5.336772203445435 seconds
+        Test set:Loss: 1.671221 Acc@1: 0.409766 
+        Privacy: (ε = 6.76, δ = 1e-05)
+Train Epoch: 79          took 5.224997520446777 seconds
+        Test set:Loss: 1.672655 Acc@1: 0.410156 
+        Privacy: (ε = 6.81, δ = 1e-05)
+Train Epoch: 80          took 5.264328718185425 seconds
+        Test set:Loss: 1.673600 Acc@1: 0.408691 
+        Privacy: (ε = 6.85, δ = 1e-05)
+Train Epoch: 81          took 5.261307001113892 seconds
+        Test set:Loss: 1.672033 Acc@1: 0.409180 
+        Privacy: (ε = 6.90, δ = 1e-05)
+Train Epoch: 82          took 5.22697377204895 seconds
+        Test set:Loss: 1.672108 Acc@1: 0.409473 
+        Privacy: (ε = 6.95, δ = 1e-05)
+Train Epoch: 83          took 5.284040689468384 seconds
+        Test set:Loss: 1.671899 Acc@1: 0.408203 
+        Privacy: (ε = 7.00, δ = 1e-05)
+Train Epoch: 84          took 5.314863681793213 seconds
+        Test set:Loss: 1.671949 Acc@1: 0.410742 
+        Privacy: (ε = 7.05, δ = 1e-05)
+Train Epoch: 85          took 5.24280047416687 seconds
+        Test set:Loss: 1.671358 Acc@1: 0.410645 
+        Privacy: (ε = 7.09, δ = 1e-05)
+Train Epoch: 86          took 5.182841062545776 seconds
+        Test set:Loss: 1.671412 Acc@1: 0.410352 
+        Privacy: (ε = 7.14, δ = 1e-05)
+Train Epoch: 87          took 5.252784013748169 seconds
+        Test set:Loss: 1.671319 Acc@1: 0.411328 
+        Privacy: (ε = 7.19, δ = 1e-05)
+Train Epoch: 88          took 5.255345106124878 seconds
+        Test set:Loss: 1.671332 Acc@1: 0.411426 
+        Privacy: (ε = 7.24, δ = 1e-05)
+Train Epoch: 89          took 5.230403900146484 seconds
+        Test set:Loss: 1.671324 Acc@1: 0.411719 
+        Privacy: (ε = 7.28, δ = 1e-05)
+Train Epoch: 90          took 5.253075838088989 seconds
+        Test set:Loss: 1.671321 Acc@1: 0.411816 
+        Privacy: (ε = 7.33, δ = 1e-05)
+Average epoch time (all epochs):  5.239097314410739
+Median epoch time (all epochs):  5.236616849899292
+Average epoch time (except first):  5.239013109314308
+Median epoch time (except first):  5.235193490982056
+Total training time (excluding evaluation):  471.51875829696655

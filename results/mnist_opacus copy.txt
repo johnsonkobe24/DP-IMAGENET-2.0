@@ -1,0 +1,116 @@
+mnist_opacus.txt
+without DP:
+(dp_imagenet) (tensorflow2_p38) ubuntu@ip-172-31-89-209:~/dp-imagenet$ CUDA_VISIBLE_DEVICES=0 python benchmark/mnist_opacus.py --disable-dp
+run nonprivate
+Train Epoch: 0   took 0.49834561347961426 seconds
+Train Epoch: 1   took 0.41104865074157715 seconds
+Train Epoch: 2   took 0.4094669818878174 seconds
+Train Epoch: 3   took 0.41035890579223633 seconds
+Train Epoch: 4   took 0.41001248359680176 seconds
+Train Epoch: 5   took 0.41045212745666504 seconds
+Train Epoch: 6   took 0.40431904792785645 seconds
+Train Epoch: 7   took 0.4036726951599121 seconds
+Train Epoch: 8   took 0.40361547470092773 seconds
+Train Epoch: 9   took 0.4053986072540283 seconds
+Train Epoch: 10          took 0.4088459014892578 seconds
+Train Epoch: 11          took 0.4092245101928711 seconds
+Train Epoch: 12          took 0.40828561782836914 seconds
+Train Epoch: 13          took 0.40892624855041504 seconds
+Train Epoch: 14          took 0.4106762409210205 seconds
+Average epoch time (all epochs):  0.41417660713195803
+Median epoch time (all epochs):  0.4092245101928711
+Average epoch time (except first):  0.4081645352499826
+Median epoch time (except first):  0.40907537937164307
+
+Test set: Average loss: 0.0000, Accuracy: 9876/10000 (98.76%)
+
+with DP(15 epochs):
+(dp_imagenet) (tensorflow2_p38) ubuntu@ip-172-31-89-209:~/dp-imagenet$ CUDA_VISIBLE_DEVICES=0 python benchmark/mnist_opacus.py
+/home/ubuntu/.venv/dp_imagenet/lib/python3.8/site-packages/opacus/privacy_engine.py:114: UserWarning: Secure RNG turned off. This is perfectly fine for experimentation as it allows for much faster training performance, but remember to turn it on and retrain one last time before production with ``secure_mode`` turned on.
+  warnings.warn(
+/home/ubuntu/.venv/dp_imagenet/lib/python3.8/site-packages/torch/nn/modules/module.py:1033: UserWarning: Using a non-full backward hook when the forward contains multiple autograd Nodes is deprecated and will be removed in future versions. This hook will be missing some grad_input. Please use register_full_backward_hook to get the documented behavior.
+  warnings.warn("Using a non-full backward hook when the forward contains multiple autograd Nodes "
+Train Epoch: 0   took 0.9933006763458252 seconds
+Train Epoch: 1   took 0.9488558769226074 seconds
+Train Epoch: 2   took 0.9355635643005371 seconds
+Train Epoch: 3   took 0.9655754566192627 seconds
+Train Epoch: 4   took 0.9697532653808594 seconds
+Train Epoch: 5   took 0.9701046943664551 seconds
+Train Epoch: 6   took 0.9716460704803467 seconds
+Train Epoch: 7   took 0.9678134918212891 seconds
+Train Epoch: 8   took 0.9638609886169434 seconds
+Train Epoch: 9   took 0.9582829475402832 seconds
+Train Epoch: 10          took 0.9355876445770264 seconds
+Train Epoch: 11          took 0.944025993347168 seconds
+Train Epoch: 12          took 0.9699714183807373 seconds
+Train Epoch: 13          took 0.9662528038024902 seconds
+Train Epoch: 14          took 0.9608452320098877 seconds
+Average epoch time (all epochs):  0.9614293416341145
+Median epoch time (all epochs):  0.9655754566192627
+Average epoch time (except first):  0.9591528177261353
+Median epoch time (except first):  0.964718222618103
+
+Test set: Average loss: 0.0001, Accuracy: 8619/10000 (86.19%)
+
+with DP(50 epochs):
+(dp_imagenet) (tensorflow2_p38) ubuntu@ip-172-31-89-209:~/dp-imagenet$ CUDA_VISIBLE_DEVICES=0 python benchmark/mnist_opacus.py
+/home/ubuntu/.venv/dp_imagenet/lib/python3.8/site-packages/opacus/privacy_engine.py:114: UserWarning: Secure RNG turned off. This is perfectly fine for experimentation as it allows for much faster training performance, but remember to turn it on and retrain one last time before production with ``secure_mode`` turned on.
+  warnings.warn(
+/home/ubuntu/.venv/dp_imagenet/lib/python3.8/site-packages/torch/nn/modules/module.py:1033: UserWarning: Using a non-full backward hook when the forward contains multiple autograd Nodes is deprecated and will be removed in future versions. This hook will be missing some grad_input. Please use register_full_backward_hook to get the documented behavior.
+  warnings.warn("Using a non-full backward hook when the forward contains multiple autograd Nodes "
+Train Epoch: 0   took 0.9919521808624268 seconds
+Train Epoch: 1   took 0.934415340423584 seconds
+Train Epoch: 2   took 0.952603816986084 seconds
+Train Epoch: 3   took 0.9484400749206543 seconds
+Train Epoch: 4   took 0.934807538986206 seconds
+Train Epoch: 5   took 0.9377734661102295 seconds
+Train Epoch: 6   took 0.9594426155090332 seconds
+Train Epoch: 7   took 0.9432387351989746 seconds
+Train Epoch: 8   took 0.933128833770752 seconds
+Train Epoch: 9   took 0.9389834403991699 seconds
+Train Epoch: 10          took 0.9345121383666992 seconds
+Train Epoch: 11          took 0.9654710292816162 seconds
+Train Epoch: 12          took 0.9601438045501709 seconds
+Train Epoch: 13          took 0.9636452198028564 seconds
+Train Epoch: 14          took 0.9535219669342041 seconds
+Train Epoch: 15          took 0.9476845264434814 seconds
+Train Epoch: 16          took 0.9701166152954102 seconds
+Train Epoch: 17          took 0.9692027568817139 seconds
+Train Epoch: 18          took 0.9467651844024658 seconds
+Train Epoch: 19          took 0.9419124126434326 seconds
+Train Epoch: 20          took 0.9607045650482178 seconds
+Train Epoch: 21          took 0.9414002895355225 seconds
+Train Epoch: 22          took 0.9608068466186523 seconds
+Train Epoch: 23          took 0.9430766105651855 seconds
+Train Epoch: 24          took 0.9389240741729736 seconds
+Train Epoch: 25          took 0.9637250900268555 seconds
+Train Epoch: 26          took 0.9559473991394043 seconds
+Train Epoch: 27          took 0.9419045448303223 seconds
+Train Epoch: 28          took 0.9347939491271973 seconds
+Train Epoch: 29          took 0.938664436340332 seconds
+Train Epoch: 30          took 0.9574196338653564 seconds
+Train Epoch: 31          took 0.9669511318206787 seconds
+Train Epoch: 32          took 0.9592359066009521 seconds
+Train Epoch: 33          took 0.9646971225738525 seconds
+Train Epoch: 34          took 0.9613587856292725 seconds
+Train Epoch: 35          took 0.9851851463317871 seconds
+Train Epoch: 36          took 0.9649615287780762 seconds
+Train Epoch: 37          took 1.0003583431243896 seconds
+Train Epoch: 38          took 0.979367733001709 seconds
+Train Epoch: 39          took 0.9919490814208984 seconds
+Train Epoch: 40          took 0.9673566818237305 seconds
+Train Epoch: 41          took 0.9769461154937744 seconds
+Train Epoch: 42          took 0.9799642562866211 seconds
+Train Epoch: 43          took 0.9870314598083496 seconds
+Train Epoch: 44          took 0.9583625793457031 seconds
+Train Epoch: 45          took 0.952871561050415 seconds
+Train Epoch: 46          took 0.959357738494873 seconds
+Train Epoch: 47          took 0.9639670848846436 seconds
+Train Epoch: 48          took 0.9937965869903564 seconds
+Train Epoch: 49          took 0.9788529872894287 seconds
+Average epoch time (all epochs):  0.9591540193557739
+Median epoch time (all epochs):  0.9594001770019531
+Average epoch time (except first):  0.9584846691209443
+Median epoch time (except first):  0.959357738494873
+
+Test set: Average loss: 0.0000, Accuracy: 9464/10000 (94.64%)

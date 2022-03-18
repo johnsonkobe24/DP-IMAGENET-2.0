@@ -1,0 +1,463 @@
+without dp:
+Train Epoch: 1   took 63.36877799034119 seconds
+        Test set:       Accuracy: 0.271
+Train Epoch: 2   took 60.83430814743042 seconds
+        Test set:       Accuracy: 0.3415
+Train Epoch: 3   took 61.08403253555298 seconds
+        Test set:       Accuracy: 0.3702
+Train Epoch: 4   took 60.59988188743591 seconds
+        Test set:       Accuracy: 0.4325
+Train Epoch: 5   took 61.14404368400574 seconds
+        Test set:       Accuracy: 0.4546
+Train Epoch: 6   took 60.957865476608276 seconds
+        Test set:       Accuracy: 0.4371
+Train Epoch: 7   took 60.78929853439331 seconds
+        Test set:       Accuracy: 0.4869
+Train Epoch: 8   took 60.97307324409485 seconds
+        Test set:       Accuracy: 0.5041
+Train Epoch: 9   took 60.71441411972046 seconds
+        Test set:       Accuracy: 0.4914
+Train Epoch: 10          took 60.911832094192505 seconds
+        Test set:       Accuracy: 0.5105
+Train Epoch: 11          took 61.034663915634155 seconds
+        Test set:       Accuracy: 0.5516
+Train Epoch: 12          took 60.95192241668701 seconds
+        Test set:       Accuracy: 0.5683
+Train Epoch: 13          took 61.50753688812256 seconds
+        Test set:       Accuracy: 0.5795
+Train Epoch: 14          took 53.970529079437256 seconds
+        Test set:       Accuracy: 0.5973
+Train Epoch: 15          took 53.99569821357727 seconds
+        Test set:       Accuracy: 0.5874
+Train Epoch: 16          took 54.574875831604004 seconds
+        Test set:       Accuracy: 0.6024
+Train Epoch: 17          took 54.80220413208008 seconds
+        Test set:       Accuracy: 0.6217
+Train Epoch: 18          took 54.849050998687744 seconds
+        Test set:       Accuracy: 0.6209
+Train Epoch: 19          took 54.886752128601074 seconds
+        Test set:       Accuracy: 0.6362
+Train Epoch: 20          took 54.74888491630554 seconds
+        Test set:       Accuracy: 0.6433
+Train Epoch: 21          took 54.86819553375244 seconds
+        Test set:       Accuracy: 0.643
+Train Epoch: 22          took 54.81321954727173 seconds
+        Test set:       Accuracy: 0.6471
+Train Epoch: 23          took 54.837828397750854 seconds
+        Test set:       Accuracy: 0.6499
+Train Epoch: 24          took 56.957062005996704 seconds
+        Test set:       Accuracy: 0.673
+Train Epoch: 25          took 73.28293538093567 seconds
+        Test set:       Accuracy: 0.6684
+Train Epoch: 26          took 62.89018630981445 seconds
+        Test set:       Accuracy: 0.6749
+Train Epoch: 27          took 54.905375480651855 seconds
+        Test set:       Accuracy: 0.6769
+Train Epoch: 28          took 54.780500650405884 seconds
+        Test set:       Accuracy: 0.6821
+Train Epoch: 29          took 54.8450608253479 seconds
+        Test set:       Accuracy: 0.6928
+Train Epoch: 30          took 61.02436423301697 seconds
+        Test set:       Accuracy: 0.6952
+Train Epoch: 31          took 74.22466373443604 seconds
+        Test set:       Accuracy: 0.6917
+Train Epoch: 32          took 56.596861839294434 seconds
+        Test set:       Accuracy: 0.6873
+Train Epoch: 33          took 54.88526749610901 seconds
+        Test set:       Accuracy: 0.695
+Train Epoch: 34          took 54.79756259918213 seconds
+        Test set:       Accuracy: 0.7046
+Train Epoch: 35          took 54.728431940078735 seconds
+        Test set:       Accuracy: 0.7074
+Train Epoch: 36          took 57.59901690483093 seconds
+        Test set:       Accuracy: 0.7076
+Train Epoch: 37          took 59.157262563705444 seconds
+        Test set:       Accuracy: 0.6952
+Train Epoch: 38          took 57.58620643615723 seconds
+        Test set:       Accuracy: 0.7142
+Train Epoch: 39          took 54.97864651679993 seconds
+        Test set:       Accuracy: 0.7134
+Train Epoch: 40          took 54.88943862915039 seconds
+        Test set:       Accuracy: 0.7008
+Train Epoch: 41          took 54.95532250404358 seconds
+        Test set:       Accuracy: 0.7209
+Train Epoch: 42          took 58.4238007068634 seconds
+        Test set:       Accuracy: 0.718
+Train Epoch: 43          took 59.34798812866211 seconds
+        Test set:       Accuracy: 0.7228
+Train Epoch: 44          took 59.19072771072388 seconds
+        Test set:       Accuracy: 0.7289
+Train Epoch: 45          took 58.88641691207886 seconds
+        Test set:       Accuracy: 0.7282
+Train Epoch: 46          took 58.94188356399536 seconds
+        Test set:       Accuracy: 0.7147
+Train Epoch: 47          took 59.05393409729004 seconds
+        Test set:       Accuracy: 0.7318
+Train Epoch: 48          took 58.89110589027405 seconds
+        Test set:       Accuracy: 0.7199
+Train Epoch: 49          took 59.0434467792511 seconds
+        Test set:       Accuracy: 0.7356
+Train Epoch: 50          took 59.14759612083435 seconds
+        Test set:       Accuracy: 0.7417
+Train Epoch: 51          took 59.09369468688965 seconds
+        Test set:       Accuracy: 0.7359
+Train Epoch: 52          took 59.2705774307251 seconds
+        Test set:       Accuracy: 0.7393
+Train Epoch: 53          took 55.12637186050415 seconds
+        Test set:       Accuracy: 0.7395
+Train Epoch: 54          took 54.770262002944946 seconds
+        Test set:       Accuracy: 0.7357
+Train Epoch: 55          took 54.92641592025757 seconds
+        Test set:       Accuracy: 0.7394
+Train Epoch: 56          took 54.88596296310425 seconds
+        Test set:       Accuracy: 0.7474
+Train Epoch: 57          took 54.89911365509033 seconds
+        Test set:       Accuracy: 0.7495
+Train Epoch: 58          took 54.81342363357544 seconds
+        Test set:       Accuracy: 0.7496
+Train Epoch: 59          took 54.85810923576355 seconds
+        Test set:       Accuracy: 0.748
+Train Epoch: 60          took 54.861350297927856 seconds
+        Test set:       Accuracy: 0.7538
+Train Epoch: 61          took 54.97313666343689 seconds
+        Test set:       Accuracy: 0.7513
+Train Epoch: 62          took 54.925487756729126 seconds
+        Test set:       Accuracy: 0.7504
+Train Epoch: 63          took 54.94863152503967 seconds
+        Test set:       Accuracy: 0.7505
+Train Epoch: 64          took 54.85364270210266 seconds
+        Test set:       Accuracy: 0.7541
+Train Epoch: 65          took 54.90403079986572 seconds
+        Test set:       Accuracy: 0.7555
+Train Epoch: 66          took 54.84920001029968 seconds
+        Test set:       Accuracy: 0.7511
+Train Epoch: 67          took 55.81917953491211 seconds
+        Test set:       Accuracy: 0.7521
+Train Epoch: 68          took 56.56013464927673 seconds
+        Test set:       Accuracy: 0.7521
+Train Epoch: 69          took 56.04837727546692 seconds
+        Test set:       Accuracy: 0.7562
+Train Epoch: 70          took 55.01532793045044 seconds
+        Test set:       Accuracy: 0.7558
+Train Epoch: 71          took 55.48235297203064 seconds
+        Test set:       Accuracy: 0.7564
+Train Epoch: 72          took 55.796897411346436 seconds
+        Test set:       Accuracy: 0.7557
+Train Epoch: 73          took 55.033087491989136 seconds
+        Test set:       Accuracy: 0.7592
+Train Epoch: 74          took 55.0566942691803 seconds
+        Test set:       Accuracy: 0.7567
+Train Epoch: 75          took 55.00829887390137 seconds
+        Test set:       Accuracy: 0.7583
+Train Epoch: 76          took 55.051339864730835 seconds
+        Test set:       Accuracy: 0.7571
+Train Epoch: 77          took 55.13779830932617 seconds
+        Test set:       Accuracy: 0.7579
+Train Epoch: 78          took 54.98547148704529 seconds
+        Test set:       Accuracy: 0.7567
+Train Epoch: 79          took 55.14655780792236 seconds
+        Test set:       Accuracy: 0.7572
+Train Epoch: 80          took 55.483253717422485 seconds
+        Test set:       Accuracy: 0.7598
+Train Epoch: 81          took 55.38096499443054 seconds
+        Test set:       Accuracy: 0.7572
+Train Epoch: 82          took 55.62956714630127 seconds
+        Test set:       Accuracy: 0.7593
+Train Epoch: 83          took 55.28305268287659 seconds
+        Test set:       Accuracy: 0.7588
+Train Epoch: 84          took 55.16468667984009 seconds
+        Test set:       Accuracy: 0.7592
+Train Epoch: 85          took 55.298932790756226 seconds
+        Test set:       Accuracy: 0.759
+Train Epoch: 86          took 55.700201749801636 seconds
+        Test set:       Accuracy: 0.7585
+Train Epoch: 87          took 56.72146224975586 seconds
+        Test set:       Accuracy: 0.7598
+Train Epoch: 88          took 70.25326704978943 seconds
+        Test set:       Accuracy: 0.7594
+Train Epoch: 89          took 129.97298955917358 seconds
+        Test set:       Accuracy: 0.7595
+Train Epoch: 90          took 126.46778130531311 seconds
+        Test set:       Accuracy: 0.7596
+Average epoch time (all epochs):  58.929856051339044
+Median epoch time (all epochs):  55.43165898323059
+Average epoch time (except first):  58.87998052393453
+Median epoch time (except first):  55.38096499443054
+Total training time (excluding evaluation):  5303.687044620514
+
+with dp:
+Train Epoch: 1   took 156.43106532096863 seconds
+        Test set:       Accuracy: 0.3203
+        Privacy: (ε = 0.90, δ = 1e-05)
+Train Epoch: 2   took 148.04844212532043 seconds
+        Test set:       Accuracy: 0.3604
+        Privacy: (ε = 1.12, δ = 1e-05)
+Train Epoch: 3   took 147.99461960792542 seconds
+        Test set:       Accuracy: 0.4087
+        Privacy: (ε = 1.32, δ = 1e-05)
+Train Epoch: 4   took 148.17888760566711 seconds
+        Test set:       Accuracy: 0.4359
+        Privacy: (ε = 1.48, δ = 1e-05)
+Train Epoch: 5   took 148.54992699623108 seconds
+        Test set:       Accuracy: 0.4461
+        Privacy: (ε = 1.64, δ = 1e-05)
+Train Epoch: 6   took 147.88306260108948 seconds
+        Test set:       Accuracy: 0.4675
+        Privacy: (ε = 1.79, δ = 1e-05)
+Train Epoch: 7   took 148.20686864852905 seconds
+        Test set:       Accuracy: 0.4782
+        Privacy: (ε = 1.92, δ = 1e-05)
+Train Epoch: 8   took 148.02409887313843 seconds
+        Test set:       Accuracy: 0.5013
+        Privacy: (ε = 2.04, δ = 1e-05)
+Train Epoch: 9   took 147.71159601211548 seconds
+        Test set:       Accuracy: 0.5065
+        Privacy: (ε = 2.17, δ = 1e-05)
+Train Epoch: 10          took 148.40852665901184 seconds
+        Test set:       Accuracy: 0.5049
+        Privacy: (ε = 2.28, δ = 1e-05)
+Train Epoch: 11          took 147.87452697753906 seconds
+        Test set:       Accuracy: 0.5198
+        Privacy: (ε = 2.39, δ = 1e-05)
+Train Epoch: 12          took 147.89055371284485 seconds
+        Test set:       Accuracy: 0.5514
+        Privacy: (ε = 2.50, δ = 1e-05)
+Train Epoch: 13          took 148.37930750846863 seconds
+        Test set:       Accuracy: 0.5143
+        Privacy: (ε = 2.60, δ = 1e-05)
+Train Epoch: 14          took 148.43098878860474 seconds
+        Test set:       Accuracy: 0.5499
+        Privacy: (ε = 2.70, δ = 1e-05)
+Train Epoch: 15          took 147.8752510547638 seconds
+        Test set:       Accuracy: 0.5548
+        Privacy: (ε = 2.79, δ = 1e-05)
+Train Epoch: 16          took 146.45485186576843 seconds
+        Test set:       Accuracy: 0.5598
+        Privacy: (ε = 2.88, δ = 1e-05)
+Train Epoch: 17          took 139.2445981502533 seconds
+        Test set:       Accuracy: 0.5772
+        Privacy: (ε = 2.97, δ = 1e-05)
+Train Epoch: 18          took 139.29680633544922 seconds
+        Test set:       Accuracy: 0.5492
+        Privacy: (ε = 3.07, δ = 1e-05)
+Train Epoch: 19          took 139.13319849967957 seconds
+        Test set:       Accuracy: 0.5803
+        Privacy: (ε = 3.16, δ = 1e-05)
+Train Epoch: 20          took 139.28710794448853 seconds
+        Test set:       Accuracy: 0.5823
+        Privacy: (ε = 3.25, δ = 1e-05)
+Train Epoch: 21          took 139.177978515625 seconds
+        Test set:       Accuracy: 0.5996
+        Privacy: (ε = 3.34, δ = 1e-05)
+Train Epoch: 22          took 139.075021982193 seconds
+        Test set:       Accuracy: 0.584
+        Privacy: (ε = 3.41, δ = 1e-05)
+Train Epoch: 23          took 139.1540491580963 seconds
+        Test set:       Accuracy: 0.6012
+        Privacy: (ε = 3.49, δ = 1e-05)
+Train Epoch: 24          took 139.2548360824585 seconds
+        Test set:       Accuracy: 0.6046
+        Privacy: (ε = 3.56, δ = 1e-05)
+Train Epoch: 25          took 139.27435755729675 seconds
+        Test set:       Accuracy: 0.6111
+        Privacy: (ε = 3.64, δ = 1e-05)
+Train Epoch: 26          took 139.28087615966797 seconds
+        Test set:       Accuracy: 0.6168
+        Privacy: (ε = 3.71, δ = 1e-05)
+Train Epoch: 27          took 139.43816685676575 seconds
+        Test set:       Accuracy: 0.6044
+        Privacy: (ε = 3.78, δ = 1e-05)
+Train Epoch: 28          took 139.13706851005554 seconds
+        Test set:       Accuracy: 0.6157
+        Privacy: (ε = 3.86, δ = 1e-05)
+Train Epoch: 29          took 139.30206418037415 seconds
+        Test set:       Accuracy: 0.6229
+        Privacy: (ε = 3.93, δ = 1e-05)
+Train Epoch: 30          took 139.4900188446045 seconds
+        Test set:       Accuracy: 0.613
+        Privacy: (ε = 4.01, δ = 1e-05)
+Train Epoch: 31          took 139.28775477409363 seconds
+        Test set:       Accuracy: 0.6205
+        Privacy: (ε = 4.08, δ = 1e-05)
+Train Epoch: 32          took 139.24978852272034 seconds
+        Test set:       Accuracy: 0.6359
+        Privacy: (ε = 4.16, δ = 1e-05)
+Train Epoch: 33          took 139.2769260406494 seconds
+        Test set:       Accuracy: 0.6338
+        Privacy: (ε = 4.23, δ = 1e-05)
+Train Epoch: 34          took 139.43492078781128 seconds
+        Test set:       Accuracy: 0.6441
+        Privacy: (ε = 4.31, δ = 1e-05)
+Train Epoch: 35          took 139.34515976905823 seconds
+        Test set:       Accuracy: 0.6445
+        Privacy: (ε = 4.37, δ = 1e-05)
+Train Epoch: 36          took 139.25687098503113 seconds
+        Test set:       Accuracy: 0.6389
+        Privacy: (ε = 4.43, δ = 1e-05)
+Train Epoch: 37          took 139.08463716506958 seconds
+        Test set:       Accuracy: 0.6387
+        Privacy: (ε = 4.49, δ = 1e-05)
+Train Epoch: 38          took 139.37826132774353 seconds
+        Test set:       Accuracy: 0.6346
+        Privacy: (ε = 4.56, δ = 1e-05)
+Train Epoch: 39          took 139.49516677856445 seconds
+        Test set:       Accuracy: 0.6386
+        Privacy: (ε = 4.62, δ = 1e-05)
+Train Epoch: 40          took 139.15239191055298 seconds
+        Test set:       Accuracy: 0.6506
+        Privacy: (ε = 4.68, δ = 1e-05)
+Train Epoch: 41          took 139.13260293006897 seconds
+        Test set:       Accuracy: 0.6488
+        Privacy: (ε = 4.74, δ = 1e-05)
+Train Epoch: 42          took 139.1940221786499 seconds
+        Test set:       Accuracy: 0.6456
+        Privacy: (ε = 4.80, δ = 1e-05)
+Train Epoch: 43          took 139.3698878288269 seconds
+        Test set:       Accuracy: 0.6542
+        Privacy: (ε = 4.86, δ = 1e-05)
+Train Epoch: 44          took 139.52291345596313 seconds
+        Test set:       Accuracy: 0.6506
+        Privacy: (ε = 4.92, δ = 1e-05)
+Train Epoch: 45          took 139.39646816253662 seconds
+        Test set:       Accuracy: 0.6498
+        Privacy: (ε = 4.98, δ = 1e-05)
+Train Epoch: 46          took 139.45223188400269 seconds
+        Test set:       Accuracy: 0.6523
+        Privacy: (ε = 5.04, δ = 1e-05)
+Train Epoch: 47          took 139.39329528808594 seconds
+        Test set:       Accuracy: 0.6537
+        Privacy: (ε = 5.10, δ = 1e-05)
+Train Epoch: 48          took 139.6250901222229 seconds
+        Test set:       Accuracy: 0.6546
+        Privacy: (ε = 5.16, δ = 1e-05)
+Train Epoch: 49          took 139.2419581413269 seconds
+        Test set:       Accuracy: 0.6613
+        Privacy: (ε = 5.22, δ = 1e-05)
+Train Epoch: 50          took 139.3120195865631 seconds
+        Test set:       Accuracy: 0.6569
+        Privacy: (ε = 5.28, δ = 1e-05)
+Train Epoch: 51          took 139.48126411437988 seconds
+        Test set:       Accuracy: 0.6582
+        Privacy: (ε = 5.34, δ = 1e-05)
+Train Epoch: 52          took 139.33785462379456 seconds
+        Test set:       Accuracy: 0.6644
+        Privacy: (ε = 5.40, δ = 1e-05)
+Train Epoch: 53          took 139.62874698638916 seconds
+        Test set:       Accuracy: 0.6632
+        Privacy: (ε = 5.46, δ = 1e-05)
+Train Epoch: 54          took 139.4192144870758 seconds
+        Test set:       Accuracy: 0.6625
+        Privacy: (ε = 5.51, δ = 1e-05)
+Train Epoch: 55          took 139.53685879707336 seconds
+        Test set:       Accuracy: 0.6649
+        Privacy: (ε = 5.57, δ = 1e-05)
+Train Epoch: 56          took 139.26714825630188 seconds
+        Test set:       Accuracy: 0.6653
+        Privacy: (ε = 5.62, δ = 1e-05)
+Train Epoch: 57          took 139.19441080093384 seconds
+        Test set:       Accuracy: 0.6652
+        Privacy: (ε = 5.67, δ = 1e-05)
+Train Epoch: 58          took 139.2825846672058 seconds
+        Test set:       Accuracy: 0.6681
+        Privacy: (ε = 5.73, δ = 1e-05)
+Train Epoch: 59          took 138.93846678733826 seconds
+        Test set:       Accuracy: 0.6679
+        Privacy: (ε = 5.78, δ = 1e-05)
+Train Epoch: 60          took 139.75226545333862 seconds
+        Test set:       Accuracy: 0.6688
+        Privacy: (ε = 5.83, δ = 1e-05)
+Train Epoch: 61          took 139.4748237133026 seconds
+        Test set:       Accuracy: 0.663
+        Privacy: (ε = 5.89, δ = 1e-05)
+Train Epoch: 62          took 139.20584726333618 seconds
+        Test set:       Accuracy: 0.6681
+        Privacy: (ε = 5.94, δ = 1e-05)
+Train Epoch: 63          took 139.6746633052826 seconds
+        Test set:       Accuracy: 0.6719
+        Privacy: (ε = 6.00, δ = 1e-05)
+Train Epoch: 64          took 139.18307852745056 seconds
+        Test set:       Accuracy: 0.6708
+        Privacy: (ε = 6.05, δ = 1e-05)
+Train Epoch: 65          took 139.5782389640808 seconds
+        Test set:       Accuracy: 0.6698
+        Privacy: (ε = 6.10, δ = 1e-05)
+Train Epoch: 66          took 139.31858348846436 seconds
+        Test set:       Accuracy: 0.6683
+        Privacy: (ε = 6.16, δ = 1e-05)
+Train Epoch: 67          took 139.39674305915833 seconds
+        Test set:       Accuracy: 0.6714
+        Privacy: (ε = 6.21, δ = 1e-05)
+Train Epoch: 68          took 139.4778299331665 seconds
+        Test set:       Accuracy: 0.6707
+        Privacy: (ε = 6.26, δ = 1e-05)
+Train Epoch: 69          took 139.72693538665771 seconds
+        Test set:       Accuracy: 0.6721
+        Privacy: (ε = 6.32, δ = 1e-05)
+Train Epoch: 70          took 139.23883819580078 seconds
+        Test set:       Accuracy: 0.6744
+        Privacy: (ε = 6.37, δ = 1e-05)
+Train Epoch: 71          took 139.52005815505981 seconds
+        Test set:       Accuracy: 0.677
+        Privacy: (ε = 6.43, δ = 1e-05)
+Train Epoch: 72          took 139.251859664917 seconds
+        Test set:       Accuracy: 0.6775
+        Privacy: (ε = 6.48, δ = 1e-05)
+Train Epoch: 73          took 139.4504017829895 seconds
+        Test set:       Accuracy: 0.6758
+        Privacy: (ε = 6.53, δ = 1e-05)
+Train Epoch: 74          took 139.50107383728027 seconds
+        Test set:       Accuracy: 0.6765
+        Privacy: (ε = 6.58, δ = 1e-05)
+Train Epoch: 75          took 139.68188548088074 seconds
+        Test set:       Accuracy: 0.6777
+        Privacy: (ε = 6.62, δ = 1e-05)
+Train Epoch: 76          took 139.39522433280945 seconds
+        Test set:       Accuracy: 0.6768
+        Privacy: (ε = 6.67, δ = 1e-05)
+Train Epoch: 77          took 139.4515585899353 seconds
+        Test set:       Accuracy: 0.68
+        Privacy: (ε = 6.72, δ = 1e-05)
+Train Epoch: 78          took 139.36808371543884 seconds
+        Test set:       Accuracy: 0.6789
+        Privacy: (ε = 6.76, δ = 1e-05)
+Train Epoch: 79          took 139.37565350532532 seconds
+        Test set:       Accuracy: 0.6798
+        Privacy: (ε = 6.81, δ = 1e-05)
+Train Epoch: 80          took 139.37569761276245 seconds
+        Test set:       Accuracy: 0.679
+        Privacy: (ε = 6.86, δ = 1e-05)
+Train Epoch: 81          took 139.45450568199158 seconds
+        Test set:       Accuracy: 0.6787
+        Privacy: (ε = 6.91, δ = 1e-05)
+Train Epoch: 82          took 139.28795981407166 seconds
+        Test set:       Accuracy: 0.6796
+        Privacy: (ε = 6.95, δ = 1e-05)
+Train Epoch: 83          took 139.32351279258728 seconds
+        Test set:       Accuracy: 0.6818
+        Privacy: (ε = 7.00, δ = 1e-05)
+Train Epoch: 84          took 139.46273064613342 seconds
+        Test set:       Accuracy: 0.6788
+        Privacy: (ε = 7.05, δ = 1e-05)
+Train Epoch: 85          took 139.26777982711792 seconds
+        Test set:       Accuracy: 0.6804
+        Privacy: (ε = 7.09, δ = 1e-05)
+Train Epoch: 86          took 139.69735670089722 seconds
+        Test set:       Accuracy: 0.681
+        Privacy: (ε = 7.14, δ = 1e-05)
+Train Epoch: 87          took 139.23708772659302 seconds
+        Test set:       Accuracy: 0.6805
+        Privacy: (ε = 7.19, δ = 1e-05)
+Train Epoch: 88          took 139.42752742767334 seconds
+        Test set:       Accuracy: 0.681
+        Privacy: (ε = 7.24, δ = 1e-05)
+Train Epoch: 89          took 139.53533935546875 seconds
+        Test set:       Accuracy: 0.6805
+        Privacy: (ε = 7.28, δ = 1e-05)
+Train Epoch: 90          took 139.2578206062317 seconds
+        Test set:       Accuracy: 0.6804
+        Privacy: (ε = 7.33, δ = 1e-05)
+Average epoch time (all epochs):  140.98809560934703
+Median epoch time (all epochs):  139.39584624767303
+Average epoch time (except first):  140.8145790957333
+Median epoch time (except first):  139.39522433280945
+Total training time (excluding evaluation):  12688.928604841232

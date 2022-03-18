@@ -1,0 +1,99 @@
+[I 18:24:01.031 NotebookApp] The port 8888 is already in use, trying another port.
+[I 18:24:01.031 NotebookApp] The port 8889 is already in use, trying another port.
+[I 18:24:01.031 NotebookApp] The port 8890 is already in use, trying another port.
+[I 18:24:01.032 NotebookApp] Serving notebooks from local directory: /Users/wenjiazhang/Desktop/22Spring/10-707_Advanced_Deep_Learning/project/DP-IMAGENET-1.0
+[I 18:24:01.032 NotebookApp] Jupyter Notebook 6.4.4 is running at:
+[I 18:24:01.032 NotebookApp] http://localhost:8891/?token=5ced8d37cfca08d77c085ab70d48dc34a74139d4fbd7e82c
+[I 18:24:01.032 NotebookApp]  or http://127.0.0.1:8891/?token=5ced8d37cfca08d77c085ab70d48dc34a74139d4fbd7e82c
+[I 18:24:01.032 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:24:01.037 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/wenjiazhang/Library/Jupyter/runtime/nbserver-57596-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8891/?token=5ced8d37cfca08d77c085ab70d48dc34a74139d4fbd7e82c
+     or http://127.0.0.1:8891/?token=5ced8d37cfca08d77c085ab70d48dc34a74139d4fbd7e82c
+/Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[I 18:24:15.663 NotebookApp] Creating new notebook in /results
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7fc9d00fc5e0>()
+handle: <Handle <TaskStepMethWrapper object at 0x7fc9d00fc5e0>()>
+Traceback (most recent call last):
+  File "/Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-56' coro=<RequestHandler._execute() running at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/web.py:1660> cb=[_HandlerDelegate.execute.<locals>.<lambda>() at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/web.py:2326]> while another task <Task pending name='Task-55' coro=<MappingKernelManager.start_kernel() running at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/notebook/services/kernels/kernelmanager.py:176> cb=[IOLoop.add_future.<locals>.<lambda>() at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/ioloop.py:688]> is being executed.
+ERROR:asyncio:Exception in callback <TaskStepMethWrapper object at 0x7fc9d00fca90>()
+handle: <Handle <TaskStepMethWrapper object at 0x7fc9d00fca90>()>
+Traceback (most recent call last):
+  File "/Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-57' coro=<RequestHandler._execute() running at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/web.py:1660> cb=[_HandlerDelegate.execute.<locals>.<lambda>() at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/web.py:2326]> while another task <Task pending name='Task-55' coro=<MappingKernelManager.start_kernel() running at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/notebook/services/kernels/kernelmanager.py:176> cb=[IOLoop.add_future.<locals>.<lambda>() at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/ioloop.py:688]> is being executed.
+/Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/traitlets/traitlets.py:477: RuntimeWarning: coroutine 'RequestHandler._execute' was never awaited
+  self.metadata = self.metadata.copy()
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-56' coro=<RequestHandler._execute() running at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/web.py:1660> cb=[_HandlerDelegate.execute.<locals>.<lambda>() at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/web.py:2326]>
+ERROR:asyncio:Task was destroyed but it is pending!
+task: <Task pending name='Task-57' coro=<RequestHandler._execute() running at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/web.py:1660> cb=[_HandlerDelegate.execute.<locals>.<lambda>() at /Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/site-packages/tornado/web.py:2326]>
+[I 18:24:16.363 NotebookApp] Kernel started: c51a3afe-2e81-479c-93ac-57d37d7a241d, name: python3
+/Users/wenjiazhang/miniconda3/envs/hw/lib/python3.9/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
+  return _iterencode(o, 0)
+[W 18:24:47.620 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20220316182400 (::1) 21.800000ms referer=http://localhost:8891/notebooks/results/Untitled.ipynb?kernel_name=python3
+[I 18:26:17.560 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:28:16.304 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:30:16.280 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:32:16.284 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:34:16.270 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:36:16.269 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:38:16.267 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:40:16.261 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:42:16.262 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:44:16.252 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:46:16.250 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 18:48:16.245 NotebookApp] Saving file at /results/Untitled.ipynb
+[I 20:18:17.111 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 20:20:17.766 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 20:22:16.079 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 20:24:16.676 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 20:29:22.993 NotebookApp] Creating new file in /results
+[I 20:29:49.795 NotebookApp] Saving file at /results/untitled.txt
+[I 20:30:57.025 NotebookApp] Creating new file in /results
+[I 21:10:59.502 NotebookApp] Saving file at /results/cifar10-tf.txt
+[I 00:14:15.720 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:16:15.694 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:18:15.685 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:20:15.707 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:22:15.687 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:24:15.688 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:28:16.591 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:30:15.637 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:38:15.631 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:42:15.609 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:44:15.612 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:46:15.606 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:48:15.604 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 00:58:15.583 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:00:15.581 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:02:15.575 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:04:15.569 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:06:15.569 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:08:15.558 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:10:15.558 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:12:15.552 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:14:15.547 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:16:15.546 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:17:44.031 NotebookApp] Saving file at /results/cifar10_objax.txt
+[I 01:20:15.541 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:22:15.524 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:24:15.524 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:26:15.515 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:28:15.517 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:30:15.503 NotebookApp] Saving file at /results/result_plots.ipynb
+[I 01:31:14.957 NotebookApp] Saving file at /results/result_plots.ipynb
+[W 01:38:37.420 NotebookApp] delete /benchmark/mnist_objax2.py
+[I 01:57:28.370 NotebookApp] Kernel shutdown: c51a3afe-2e81-479c-93ac-57d37d7a241d
+[I 01:57:28.573 NotebookApp] Starting buffering for c51a3afe-2e81-479c-93ac-57d37d7a241d:b24cce5045704b2c8463781a3a297c78
+[I 01:57:28.576 NotebookApp] Kernel shutdown: c51a3afe-2e81-479c-93ac-57d37d7a241d
+[W 01:57:29.175 NotebookApp] 410 DELETE /api/sessions/f6b58094-190e-442b-8fbc-ef7e94cddd0d (::1): Kernel deleted before session
+[W 01:57:29.176 NotebookApp] Kernel deleted before session
+[W 01:57:29.176 NotebookApp] 410 DELETE /api/sessions/f6b58094-190e-442b-8fbc-ef7e94cddd0d (::1) 809.490000ms referer=http://localhost:8891/tree/results

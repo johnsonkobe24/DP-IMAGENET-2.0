@@ -1,0 +1,45 @@
+without dp:
+Train Epoch: 0 	 took 9.98206901550293 seconds
+Train Epoch: 1 	 took 9.17321228981018 seconds
+Train Epoch: 2 	 took 9.274211406707764 seconds
+Train Epoch: 3 	 took 9.43059754371643 seconds
+Train Epoch: 4 	 took 9.264743328094482 seconds
+Train Epoch: 5 	 took 9.34824514389038 seconds
+Train Epoch: 6 	 took 9.235887050628662 seconds
+Train Epoch: 7 	 took 9.295269250869751 seconds
+Train Epoch: 8 	 took 9.200852155685425 seconds
+Train Epoch: 9 	 took 9.466925382614136 seconds
+Train Epoch: 10 	 took 9.413485288619995 seconds
+Train Epoch: 11 	 took 9.43565058708191 seconds
+Train Epoch: 12 	 took 9.476575374603271 seconds
+Train Epoch: 13 	 took 9.64730429649353 seconds
+Train Epoch: 14 	 took 9.468312740325928 seconds
+Average epoch time (all epochs):  9.407556056976318
+Median epoch time (all epochs):  9.413485288619995
+Average epoch time (except first):  9.36651941708156
+Median epoch time (except first):  9.380865216255188
+
+Test set: Average loss: nan, Accuracy: 980/10000 (9.80%)
+
+with DP:
+Train Epoch: 0 	 took 48.01207876205444 seconds
+Train Epoch: 1 	 took 55.53609871864319 seconds
+Train Epoch: 2 	 took 61.42378282546997 seconds
+Train Epoch: 3 	 took 61.139862060546875 seconds
+Train Epoch: 4 	 took 60.897765159606934 seconds
+Train Epoch: 5 	 took 61.0706524848938 seconds
+Train Epoch: 6 	 took 60.70522403717041 seconds
+Train Epoch: 7 	 took 61.062987327575684 seconds
+Train Epoch: 8 	 took 61.05399680137634 seconds
+Train Epoch: 9 	 took 60.959556102752686 seconds
+Train Epoch: 10 	 took 61.33257460594177 seconds
+Train Epoch: 11 	 took 61.385133028030396 seconds
+Train Epoch: 12 	 took 60.7767014503479 seconds
+Train Epoch: 13 	 took 60.744813680648804 seconds
+Train Epoch: 14 	 took 61.00265860557556 seconds
+Average epoch time (all epochs):  59.806925710042314
+Median epoch time (all epochs):  61.00265860557556
+Average epoch time (except first):  60.64941477775574
+Median epoch time (except first):  61.02832770347595
+
+Test set: Average loss: 0.4991, Accuracy: 9392/10000 (93.92%)

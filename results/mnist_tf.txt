@@ -1,0 +1,77 @@
+without DP:
+(tensorflow2_p38) ubuntu@ip-172-31-84-115:~/dp-imagenet$ CUDA_VISIBLE_DEVICES=0 python benchmark/mnist_tf.py --dpsgd=False
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+11493376/11490434 [==============================] - 0s 0us/step
+11501568/11490434 [==============================] - 0s 0us/step
+240/240 [==============================] - 34s 3ms/step - loss: 1.5546 - accuracy: 0.4983
+Train Epoch: 0   took 34.23105239868164 seconds
+240/240 [==============================] - 1s 3ms/step - loss: 0.1869 - accuracy: 0.9434
+Train Epoch: 1   took 0.9591572284698486 seconds
+240/240 [==============================] - 1s 2ms/step - loss: 0.1026 - accuracy: 0.9689
+Train Epoch: 2   took 0.9435720443725586 seconds
+240/240 [==============================] - 1s 2ms/step - loss: 0.0749 - accuracy: 0.9763
+Train Epoch: 3   took 0.95339035987854 seconds
+240/240 [==============================] - 1s 2ms/step - loss: 0.0651 - accuracy: 0.9802
+Train Epoch: 4   took 0.9428870677947998 seconds
+240/240 [==============================] - 1s 2ms/step - loss: 0.0518 - accuracy: 0.9845
+Train Epoch: 5   took 0.9493560791015625 seconds
+240/240 [==============================] - 1s 3ms/step - loss: 0.0457 - accuracy: 0.9854
+Train Epoch: 6   took 0.975513219833374 seconds
+240/240 [==============================] - 1s 3ms/step - loss: 0.0418 - accuracy: 0.9872
+Train Epoch: 7   took 0.965435266494751 seconds
+240/240 [==============================] - 1s 2ms/step - loss: nan - accuracy: 0.5957
+Train Epoch: 8   took 0.9565935134887695 seconds
+240/240 [==============================] - 1s 2ms/step - loss: nan - accuracy: 0.0987
+Train Epoch: 9   took 0.9426212310791016 seconds
+240/240 [==============================] - 1s 2ms/step - loss: nan - accuracy: 0.0987
+Train Epoch: 10          took 0.9601254463195801 seconds
+240/240 [==============================] - 1s 2ms/step - loss: nan - accuracy: 0.0987
+Train Epoch: 11          took 0.951115608215332 seconds
+240/240 [==============================] - 1s 2ms/step - loss: nan - accuracy: 0.0987
+Train Epoch: 12          took 0.9577560424804688 seconds
+240/240 [==============================] - 1s 2ms/step - loss: nan - accuracy: 0.0987
+Train Epoch: 13          took 0.9532003402709961 seconds
+240/240 [==============================] - 1s 3ms/step - loss: nan - accuracy: 0.0987
+Train Epoch: 14          took 1.0090882778167725 seconds
+Average epoch time (all epochs):  3.1767242749532065
+Median epoch time (all epochs):  0.9565935134887695
+Average epoch time (except first):  0.9585579804011753
+Median epoch time (except first):  0.9549919366836548
+
+with DP:
+(tensorflow2_p38) ubuntu@ip-172-31-84-115:~/dp-imagenet$ CUDA_VISIBLE_DEVICES=0 python benchmark/mnist_tf.py
+240/240 [==============================] - 15s 30ms/step - loss: 0.8127 - accuracy: 0.7368
+Train Epoch: 0   took 15.79252815246582 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.2655 - accuracy: 0.9104
+Train Epoch: 1   took 7.362804889678955 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.2971 - accuracy: 0.9311
+Train Epoch: 2   took 7.269977569580078 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.2704 - accuracy: 0.9382
+Train Epoch: 3   took 7.320786476135254 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.3762 - accuracy: 0.9424
+Train Epoch: 4   took 7.3019304275512695 seconds
+240/240 [==============================] - 7s 30ms/step - loss: 0.6916 - accuracy: 0.9461
+Train Epoch: 5   took 7.538919925689697 seconds
+240/240 [==============================] - 7s 28ms/step - loss: 0.2062 - accuracy: 0.9488
+Train Epoch: 6   took 7.119942665100098 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.1154 - accuracy: 0.9475
+Train Epoch: 7   took 7.246268272399902 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.3833 - accuracy: 0.9474
+Train Epoch: 8   took 7.245083570480347 seconds
+240/240 [==============================] - 7s 28ms/step - loss: 0.3439 - accuracy: 0.9470
+Train Epoch: 9   took 7.14016318321228 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.3449 - accuracy: 0.9479
+Train Epoch: 10          took 7.425680160522461 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.3629 - accuracy: 0.9474
+Train Epoch: 11          took 7.370660066604614 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.1992 - accuracy: 0.9460
+Train Epoch: 12          took 7.373274803161621 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.4217 - accuracy: 0.9482
+Train Epoch: 13          took 7.41216778755188 seconds
+240/240 [==============================] - 7s 29ms/step - loss: 0.4696 - accuracy: 0.9482
+Train Epoch: 14          took 7.307587385177612 seconds
+Average epoch time (all epochs):  7.881851689020793
+Median epoch time (all epochs):  7.320786476135254
+Average epoch time (except first):  7.31680337020329
+Median epoch time (except first):  7.314186930656433
+40/40 [==============================] - 0s 2ms/step - loss: 0.3905 - accuracy: 0.9485
