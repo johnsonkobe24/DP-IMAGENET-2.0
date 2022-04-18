@@ -24,7 +24,7 @@ from absl import app, flags, logging
 
 import objax
 from objax.typing import JaxArray
-from imagenet import imagenet_data
+import imagenet_data
 from objax.zoo.resnet_v2 import ResNet50, ResNet18
 from objax.zoo.wide_resnet import WideResNet
 
@@ -36,8 +36,8 @@ flags.DEFINE_integer('grad_acc_steps', 1,
 flags.DEFINE_integer('eval_device_batch_size', 250, 'Per-device eval batch size.')
 flags.DEFINE_integer('max_eval_batches', -1, 'Maximum number of batches used for evaluation, '
                                              'zero or negative number means use all batches.')
-flags.DEFINE_integer('eval_every_n_steps', 1000, 'How often to run eval.')
-flags.DEFINE_float('num_train_epochs', 10, 'Number of training epochs.')
+flags.DEFINE_integer('eval_every_n_steps', 400, 'How often to run eval.')
+flags.DEFINE_float('num_train_epochs', 4, 'Number of training epochs.')
 flags.DEFINE_float('base_learning_rate', 2.0, 'Base learning rate.')
 flags.DEFINE_float('lr_warmup_epochs', 1.0,
                    'Number of learning rate warmup epochs.')
@@ -64,6 +64,9 @@ flags.DEFINE_integer('num_layers_to_freeze', 0, 'Number of layers to freeze for 
 FLAGS = flags.FLAGS
 
 NUM_CLASSES = 1000
+
+
+
 
 
 class GradientAccumulationOptimizerWrapper(objax.Module):
@@ -290,8 +293,7 @@ class Experiment:
         steps_per_epoch = self.train_split.num_examples / self.total_batch_size
         # total number of virtual training steps
         total_train_steps = int(steps_per_epoch * FLAGS.num_train_epochs)
-        eval_every_n_steps = FLAGS.eval_every_n_steps
-
+        eval_every_n_steps = FLAGS.eval_every_n_steps 
         if self.save_summaries:
             checkpoint = objax.io.Checkpoint(FLAGS.model_dir, keep_ckpts=FLAGS.keep_ckpts)
             start_step, _ = checkpoint.restore(self.all_vars)
@@ -325,6 +327,7 @@ class Experiment:
                 start_time = time.time()
                 for cur_step in range(big_step + 1, big_step + eval_every_n_steps + 1):
                     # with gradient accumulation, cur_step is virtual step
+                    print(cur_step)
                     batch = next(train_ds)
                     next_update_step = (cur_step + FLAGS.grad_acc_steps - 1) // FLAGS.grad_acc_steps * FLAGS.grad_acc_steps
                     cur_epoch[:] = next_update_step / steps_per_epoch
@@ -374,6 +377,7 @@ class Experiment:
                   f'eval took {elapsed_eval_time:.1f} seconds')
             print(f'    Total training time so far {total_training_time:.1f} seconds, '
                   f'avg {train_time_per_epoch:.2f} seconds per epoch', flush=True)
+
 
 
 def main(argv):

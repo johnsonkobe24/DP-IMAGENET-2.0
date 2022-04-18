@@ -2,7 +2,7 @@
 # Exploring Differential Privacy with Large-scale Imbalanced Data
 ## Course 10-707 Advanced Deep Learning, 2022 Spring
 
-Code for the midway report by Naimu Deng, Wenjia Zhang.
+Code for the midway report by Naimu Deng, Wenjia Zhang.(The work is based on Kurakin, A., Chien, S., Song, S., Geambasu, R., Terzis, A., & Thakurta, A. (2022). Toward Training at ImageNet Scale with Differential Privacy. arXiv preprint arXiv:2201.12328.)
 
 ## Repository structure
 
@@ -22,7 +22,7 @@ Code for the midway report by Naimu Deng, Wenjia Zhang.
 
     ```bash
     # Create virtualenv
-    virtualenv -p python3 ~/.venv/dp_imagenet
+    python3 -m venv  ~/.venv/dp_imagenet
     source ~/.venv/dp_imagenet/bin/activate
     # Install Objax with CUDA
     pip install --upgrade objax
