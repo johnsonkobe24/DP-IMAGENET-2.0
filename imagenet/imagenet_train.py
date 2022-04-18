@@ -36,8 +36,8 @@ flags.DEFINE_integer('grad_acc_steps', 1,
 flags.DEFINE_integer('eval_device_batch_size', 250, 'Per-device eval batch size.')
 flags.DEFINE_integer('max_eval_batches', -1, 'Maximum number of batches used for evaluation, '
                                              'zero or negative number means use all batches.')
-flags.DEFINE_integer('eval_every_n_steps', 400, 'How often to run eval.')
-flags.DEFINE_float('num_train_epochs', 4, 'Number of training epochs.')
+flags.DEFINE_integer('eval_every_n_steps', 500, 'How often to run eval.')
+flags.DEFINE_float('num_train_epochs', 20, 'Number of training epochs.')
 flags.DEFINE_float('base_learning_rate', 2.0, 'Base learning rate.')
 flags.DEFINE_float('lr_warmup_epochs', 1.0,
                    'Number of learning rate warmup epochs.')
