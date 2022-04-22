@@ -24,7 +24,7 @@ from absl import app, flags, logging
 
 import objax
 from objax.typing import JaxArray
-import imagenet_data
+import imagenet_data_im
 from objax.zoo.resnet_v2 import ResNet50, ResNet18
 from objax.zoo.wide_resnet import WideResNet
 
@@ -154,8 +154,8 @@ class Experiment:
         self.lr_warmup_epochs = FLAGS.lr_warmup_epochs
         self.num_train_epochs = FLAGS.num_train_epochs
         # Dataset
-        self.train_split = imagenet_data.get_train_dataset_split(FLAGS.dataset)
-        self.eval_split = imagenet_data.get_eval_dataset_split(FLAGS.dataset)
+        self.train_split = imagenet_data_im.get_train_dataset_split(FLAGS.dataset)
+        self.eval_split = imagenet_data_im.get_eval_dataset_split(FLAGS.dataset)
         # Create model
         self.model = make_model(FLAGS.model, self.train_split.num_classes)
         model_vars = self.model.vars()
@@ -212,7 +212,7 @@ class Experiment:
 
     def run_eval(self):
         """Runs evaluation and returns top-1 accuracy."""
-        test_ds = imagenet_data.load(
+        test_ds = imagenet_data_im.load(
             self.eval_split,
             is_training=False,
             batch_dims=[jax.local_device_count() * FLAGS.eval_device_batch_size],
@@ -283,7 +283,7 @@ class Experiment:
 
     def train_and_eval(self):
         """Runs training and evaluation."""
-        train_ds = imagenet_data.load(
+        train_ds = imagenet_data_im.load(
             self.train_split,
             is_training=True,
             batch_dims=[jax.local_device_count() * FLAGS.train_device_batch_size],
@@ -379,7 +379,7 @@ class Experiment:
                   f'avg {train_time_per_epoch:.2f} seconds per epoch', flush=True)
 
 
-train_ds = imagenet_data.load("train",is_training=True,batch_dims=[jax.local_device_count() * 128],tfds_data_dir="/Users/johnson/tensorflow_datasets/imagenet2012/5.1.0/")
+train_ds = imagenet_data_im.load("train",is_training=True,batch_dims=[jax.local_device_count() * 128],tfds_data_dir="/Users/johnson/tensorflow_datasets/imagenet2012/5.1.0/")
 train_ds
 
 def main(argv):

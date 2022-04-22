@@ -21,7 +21,7 @@ import jax
 import numpy as np
 import tensorflow as tf
 import tensorflow_datasets as tfds
-
+import pandas as pd
 MEAN_RGB = (0.485 * 255, 0.456 * 255, 0.406 * 255)
 STDDEV_RGB = (0.229 * 255, 0.224 * 255, 0.225 * 255)
 
@@ -90,10 +90,27 @@ def _shard(split: DatasetSplit, shard_index: int, num_shards: int) -> Tuple[int,
 def load(split: DatasetSplit, is_training: bool, batch_dims: Sequence[int], tfds_data_dir: Optional[str] = None):
     """Loads the given split of the dataset."""
     if is_training:
-        split="train"
+        df = tfds.load('imagenet_lt', split='train', shuffle_files=True)
+        res=[]
+        labels=dict()
+        count=0
+        for i in df:
+            if i['label'].numpy() not in labels:
+                i["image"]=tf.image.resize(i["image"], [224, 224])
+                res.append(i)
+                labels[i['label'].numpy()]=1
+                count+=1
+            if count==1000:
+                break
+        for i in df:
+            i["image"]=tf.image.resize(i["image"], [224, 224])
+            res.append(i)
+            count+=1
+            if count==11811:
+                break
+        ds=tf.data.Dataset.from_tensor_slices(pd.DataFrame.from_dict(res).to_dict(orient="list"))
     else:
-        split="validation"
-    ds = tfds.load('imagenet2012_subset', split=split, shuffle_files=True)
+        ds = tfds.load('imagenet_lt', split="test", shuffle_files=True)
     total_batch_size = np.prod(batch_dims)
 
     options = tf.data.Options()
