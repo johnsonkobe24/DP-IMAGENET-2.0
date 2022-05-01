@@ -16,7 +16,6 @@
 
 from collections import namedtuple
 from typing import Optional, Sequence, Tuple
-
 import jax
 import numpy as np
 import tensorflow as tf
@@ -40,12 +39,12 @@ DATASET_NUM_CLASSES = {
 }
 
 DATASET_NUM_TRAIN_EXAMPLES = {
-    'imagenet': 12811,
+    'imagenet': 50000,
     'places365': 1803460,
 }
 
 DATASET_NUM_EVAL_EXAMPLES = {
-    'imagenet': 50000,
+    'imagenet': 12811,
     'places365': 36500,
 }
 
@@ -90,10 +89,11 @@ def _shard(split: DatasetSplit, shard_index: int, num_shards: int) -> Tuple[int,
 def load(split: DatasetSplit, is_training: bool, batch_dims: Sequence[int], tfds_data_dir: Optional[str] = None):
     """Loads the given split of the dataset."""
     if is_training:
-        split="train"
+        splits="validation"
     else:
-        split="validation"
-    ds = tfds.load('imagenet2012_subset', split=split, shuffle_files=True)
+        splits="train"
+
+    ds = tfds.load('imagenet2012_subset', split=splits, shuffle_files=True, download=True)
     total_batch_size = np.prod(batch_dims)
 
     options = tf.data.Options()
@@ -129,5 +129,4 @@ def normalize_image_for_view(image):
     image += np.reshape(MEAN_RGB, (3, 1, 1))
     image = np.transpose(image, (1, 2, 0))
     return image.clip(0, 255).round().astype('uint8')
-
 

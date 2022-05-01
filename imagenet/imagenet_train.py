@@ -36,8 +36,8 @@ flags.DEFINE_integer('grad_acc_steps', 1,
 flags.DEFINE_integer('eval_device_batch_size', 250, 'Per-device eval batch size.')
 flags.DEFINE_integer('max_eval_batches', -1, 'Maximum number of batches used for evaluation, '
                                              'zero or negative number means use all batches.')
-flags.DEFINE_integer('eval_every_n_steps', 500, 'How often to run eval.')
-flags.DEFINE_float('num_train_epochs', 20, 'Number of training epochs.')
+flags.DEFINE_integer('eval_every_n_steps', 1950, 'How often to run eval.')
+flags.DEFINE_float('num_train_epochs', 25, 'Number of training epochs.')
 flags.DEFINE_float('base_learning_rate', 2.0, 'Base learning rate.')
 flags.DEFINE_float('lr_warmup_epochs', 1.0,
                    'Number of learning rate warmup epochs.')
@@ -59,7 +59,7 @@ flags.DEFINE_string('finetune_path', '',
                     'Path to checkpoint which is used as finetuning initialization.')
 flags.DEFINE_boolean('finetune_cut_last_layer', True,
                      'If True then last layer will be cut for finetuning.')
-flags.DEFINE_integer('num_layers_to_freeze', 0, 'Number of layers to freeze for finetuning.')
+flags.DEFINE_integer('num_layers_to_freeze', 6, 'Number of layers to freeze for finetuning.')
 
 FLAGS = flags.FLAGS
 
@@ -292,8 +292,8 @@ class Experiment:
         # in case of gradient accumulation - this is number of virtual steps per epoch
         steps_per_epoch = self.train_split.num_examples / self.total_batch_size
         # total number of virtual training steps
-        total_train_steps = int(steps_per_epoch * FLAGS.num_train_epochs)
-        eval_every_n_steps = FLAGS.eval_every_n_steps 
+        total_train_steps = int(steps_per_epoch * FLAGS.num_train_epochs) # * 5
+        eval_every_n_steps = FLAGS.eval_every_n_steps # 500
         if self.save_summaries:
             checkpoint = objax.io.Checkpoint(FLAGS.model_dir, keep_ckpts=FLAGS.keep_ckpts)
             start_step, _ = checkpoint.restore(self.all_vars)
@@ -327,7 +327,9 @@ class Experiment:
                 start_time = time.time()
                 for cur_step in range(big_step + 1, big_step + eval_every_n_steps + 1):
                     # with gradient accumulation, cur_step is virtual step
-                    print(cur_step)
+                    if (cur_step % 10 == 0):
+                        print(f'* current step {cur_step}')
+                    
                     batch = next(train_ds)
                     next_update_step = (cur_step + FLAGS.grad_acc_steps - 1) // FLAGS.grad_acc_steps * FLAGS.grad_acc_steps
                     cur_epoch[:] = next_update_step / steps_per_epoch
@@ -340,6 +342,7 @@ class Experiment:
                 elapsed_train_time = time.time() - start_time
                 total_training_time += elapsed_train_time
                 train_time_per_epoch = total_training_time / cur_epoch[0]
+                print(f'total train time {total_training_time}, train time per epoch {train_time_per_epoch}')
                 # eval
                 start_time = time.time()
                 accuracy = self.run_eval()
@@ -352,21 +355,25 @@ class Experiment:
                     delta=FLAGS.dp_delta)
             else:
                dp_epsilon = None
-            if self.save_summaries:
-                # In multi-host setup only first host saves summaries and checkpoints.
-                if jax.host_id() == 0:
-                    # save summary
-                    summary = objax.jaxboard.Summary()
-                    for k, v in monitors.items():
-                        summary.scalar(f'train/{k}', v)
-                    if dp_epsilon is not None:
-                        summary.scalar('dp/epsilon', dp_epsilon)
-                        summary.scalar('dp/delta', FLAGS.dp_delta)
-                    summary.scalar('test/accuracy', accuracy * 100)
-                    self.summary_writer.write(summary, step=int(cur_step / FLAGS.grad_acc_steps))
-                    # save checkpoint
-                    checkpoint.save(self.all_vars, cur_step)
-            # print info
+            
+            ### skip check point saving process
+
+            # if self.save_summaries:
+            #     # In multi-host setup only first host saves summaries and checkpoints.
+            #     if jax.host_id() == 0:
+            #         # save summary
+            #         summary = objax.jaxboard.Summary()
+            #         for k, v in monitors.items():
+            #             summary.scalar(f'train/{k}', v)
+            #         if dp_epsilon is not None:
+            #             summary.scalar('dp/epsilon', dp_epsilon)
+            #             summary.scalar('dp/delta', FLAGS.dp_delta)
+            #         summary.scalar('test/accuracy', accuracy * 100)
+            #         self.summary_writer.write(summary, step=int(cur_step / FLAGS.grad_acc_steps))
+            #         # save checkpoint
+            #         checkpoint.save(self.all_vars, cur_step)
+            
+            ### print info
             print(f'Step {cur_step} -- '
                   f'Epoch {cur_step / steps_per_epoch:.2f} -- '
                   f'Loss {monitors["total_loss"]:.2f}  '
@@ -396,3 +403,4 @@ if __name__ == '__main__':
     logging.set_verbosity(logging.ERROR)
     jax.config.config_with_absl()
     app.run(main)
+

@@ -16,7 +16,7 @@
 
 from collections import namedtuple
 from typing import Optional, Sequence, Tuple
-
+import os
 import jax
 import numpy as np
 import tensorflow as tf
@@ -89,28 +89,47 @@ def _shard(split: DatasetSplit, shard_index: int, num_shards: int) -> Tuple[int,
 
 def load(split: DatasetSplit, is_training: bool, batch_dims: Sequence[int], tfds_data_dir: Optional[str] = None):
     """Loads the given split of the dataset."""
+    data_dir = '~/manual/'
+    write_dir = '~/imagenet_lt'
+    download_config = tfds.download.DownloadConfig(
+                      extract_dir=os.path.join(write_dir, 'extracted'),
+                      manual_dir=data_dir
+                  )
+    download_and_prepare_kwargs = {
+        'download_dir': os.path.join(write_dir, 'downloaded'),
+        'download_config': download_config,
+    }
     if is_training:
-        df = tfds.load('imagenet_lt', split='train', shuffle_files=True)
+        df = tfds.load('imagenet_subset', split='train', shuffle_files=True,download_and_prepare_kwargs=download_and_prepare_kwargs)
         res=[]
-        labels=dict()
+        labels=[]
         count=0
         for i in df:
             if i['label'].numpy() not in labels:
                 i["image"]=tf.image.resize(i["image"], [224, 224])
                 res.append(i)
-                labels[i['label'].numpy()]=1
+                labels.append(i['label'].numpy())
                 count+=1
             if count==1000:
                 break
+        #df1 = tfds.load('imagenet_lt', split='train')
         for i in df:
             i["image"]=tf.image.resize(i["image"], [224, 224])
             res.append(i)
             count+=1
-            if count==11811:
+            if count==5000:
+                break
+        df2 = tfds.load('imagenet2012', split='train',shuffle_files=True)
+        for i in df2:
+            if i['label'].numpy() in labels[:50]:
+                i["image"]=tf.image.resize(i["image"], [224, 224])
+                res.append(i)
+                count+=1
+            if count==12811:
                 break
         ds=tf.data.Dataset.from_tensor_slices(pd.DataFrame.from_dict(res).to_dict(orient="list"))
     else:
-        ds = tfds.load('imagenet_lt', split="test", shuffle_files=True)
+        ds = tfds.load('imagenet_lt', split="test", shuffle_files=True)#download_and_prepare_kwargs=download_and_prepare_kwargs)
     total_batch_size = np.prod(batch_dims)
 
     options = tf.data.Options()
